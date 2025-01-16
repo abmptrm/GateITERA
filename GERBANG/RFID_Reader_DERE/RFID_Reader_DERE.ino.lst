@@ -1,0 +1,2671 @@
+
+C:\Users\kedai\AppData\Local\Temp\arduino\sketches\DB2E6F5972B66EB8889115D6691375B8/RFID_Reader_DERE.ino.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+__vectors():
+   0:	31 c0       	rjmp	.+98     	; 0x64 <__ctors_end>
+   2:	61 c3       	rjmp	.+1730   	; 0x6c6 <__vector_1>
+   4:	33 c3       	rjmp	.+1638   	; 0x66c <__vector_2>
+   6:	53 c0       	rjmp	.+166    	; 0xae <__bad_interrupt>
+   8:	52 c0       	rjmp	.+164    	; 0xae <__bad_interrupt>
+   a:	51 c0       	rjmp	.+162    	; 0xae <__bad_interrupt>
+   c:	e5 c2       	rjmp	.+1482   	; 0x5d8 <__vector_6>
+   e:	af c3       	rjmp	.+1886   	; 0x76e <__vector_7>
+  10:	87 c3       	rjmp	.+1806   	; 0x720 <__vector_8>
+  12:	4d c0       	rjmp	.+154    	; 0xae <__bad_interrupt>
+  14:	4c c0       	rjmp	.+152    	; 0xae <__bad_interrupt>
+  16:	4b c0       	rjmp	.+150    	; 0xae <__bad_interrupt>
+  18:	4a c0       	rjmp	.+148    	; 0xae <__bad_interrupt>
+  1a:	49 c0       	rjmp	.+146    	; 0xae <__bad_interrupt>
+  1c:	48 c0       	rjmp	.+144    	; 0xae <__bad_interrupt>
+  1e:	47 c0       	rjmp	.+142    	; 0xae <__bad_interrupt>
+  20:	46 c0       	rjmp	.+140    	; 0xae <__bad_interrupt>
+  22:	45 c0       	rjmp	.+138    	; 0xae <__bad_interrupt>
+  24:	44 c0       	rjmp	.+136    	; 0xae <__bad_interrupt>
+  26:	43 c0       	rjmp	.+134    	; 0xae <__bad_interrupt>
+  28:	42 c0       	rjmp	.+132    	; 0xae <__bad_interrupt>
+
+0000002a <__trampolines_end>:
+__trampolines_start():
+  2a:	00 00       	nop
+  2c:	3a 00       	.word	0x003a	; ????
+  2e:	37 00       	.word	0x0037	; ????
+  30:	00 00       	nop
+  32:	31 00       	.word	0x0031	; ????
+
+00000034 <port_to_output_PGM>:
+  34:	00 00 3b 00 38 00 00 00 32 00                       ..;.8...2.
+
+0000003e <digital_pin_to_port_PGM>:
+  3e:	04 04 01 01 04 04 04 04 04 02 02 02 02 02 02 02     ................
+  4e:	02 01                                               ..
+
+00000050 <digital_pin_to_bit_mask_PGM>:
+  50:	01 02 02 01 04 08 10 20 40 01 02 04 08 10 20 40     ....... @..... @
+  60:	80 04                                               ..
+
+00000062 <__ctors_start>:
+__ctors_start():
+  62:	e4 03       	fmuls	r22, r20
+
+00000064 <__ctors_end>:
+__dtors_end():
+  64:	11 24       	eor	r1, r1
+  66:	1f be       	out	0x3f, r1	; 63
+  68:	cf e5       	ldi	r28, 0x5F	; 95
+  6a:	d1 e0       	ldi	r29, 0x01	; 1
+  6c:	de bf       	out	0x3e, r29	; 62
+  6e:	cd bf       	out	0x3d, r28	; 61
+
+00000070 <__do_clear_bss>:
+__do_clear_bss():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2441
+  70:	20 e0       	ldi	r18, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2442
+  72:	ac e7       	ldi	r26, 0x7C	; 124
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2443
+  74:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2444
+  76:	01 c0       	rjmp	.+2      	; 0x7a <.do_clear_bss_start>
+
+00000078 <.do_clear_bss_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2446
+  78:	1d 92       	st	X+, r1
+
+0000007a <.do_clear_bss_start>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2448
+  7a:	ae 3d       	cpi	r26, 0xDE	; 222
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2449
+  7c:	b2 07       	cpc	r27, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2450
+  7e:	e1 f7       	brne	.-8      	; 0x78 <.do_clear_bss_loop>
+
+00000080 <__do_copy_data>:
+__do_copy_data():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2409
+  80:	10 e0       	ldi	r17, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2410
+  82:	a0 e6       	ldi	r26, 0x60	; 96
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2411
+  84:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2412
+  86:	e2 ea       	ldi	r30, 0xA2	; 162
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2413
+  88:	fd e0       	ldi	r31, 0x0D	; 13
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2414
+  8a:	02 c0       	rjmp	.+4      	; 0x90 <__do_copy_data+0x10>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2417
+  8c:	05 90       	lpm	r0, Z+
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2422
+  8e:	0d 92       	st	X+, r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2424
+  90:	ac 37       	cpi	r26, 0x7C	; 124
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2425
+  92:	b1 07       	cpc	r27, r17
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2426
+  94:	d9 f7       	brne	.-10     	; 0x8c <__do_copy_data+0xc>
+
+00000096 <__do_global_ctors>:
+__do_global_ctors():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2466
+  96:	10 e0       	ldi	r17, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2467
+  98:	c2 e3       	ldi	r28, 0x32	; 50
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2468
+  9a:	d0 e0       	ldi	r29, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2472
+  9c:	03 c0       	rjmp	.+6      	; 0xa4 <__do_global_ctors+0xe>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2474
+  9e:	21 97       	sbiw	r28, 0x01	; 1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2480
+  a0:	fe 01       	movw	r30, r28
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2481
+  a2:	77 d6       	rcall	.+3310   	; 0xd92 <__tablejump2__>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2483
+  a4:	c1 33       	cpi	r28, 0x31	; 49
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2484
+  a6:	d1 07       	cpc	r29, r17
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2489
+  a8:	d1 f7       	brne	.-12     	; 0x9e <__do_global_ctors+0x8>
+  aa:	c5 d3       	rcall	.+1930   	; 0x836 <main>
+  ac:	78 c6       	rjmp	.+3312   	; 0xd9e <_exit>
+
+000000ae <__bad_interrupt>:
+__vector_12():
+  ae:	a8 cf       	rjmp	.-176    	; 0x0 <__vectors>
+
+000000b0 <attachInterrupt.constprop.18>:
+attachInterrupt.constprop.18():
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/WInterrupts.c:50
+  #define EIMSK GIMSK
+#endif
+
+void attachInterrupt(uint8_t interruptNum, void (*userFunc)(void), int mode)
+{
+  if ( interruptNum < NUMBER_EXTERNAL_INTERRUPTS )
+  b0:	82 30       	cpi	r24, 0x02	; 2
+  b2:	a0 f4       	brcc	.+40     	; 0xdc <attachInterrupt.constprop.18+0x2c>
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/WInterrupts.c:60
+      is not safe.  Changing intFunc is not atomic.
+    intFunc[interruptNum] = userFunc;
+    */
+    {
+      // save interrupt flag
+      uint8_t SaveSREG = SREG;
+  b4:	9f b7       	in	r25, 0x3f	; 63
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/WInterrupts.c:62
+      // disable interrupts
+      cli();
+  b6:	f8 94       	cli
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/WInterrupts.c:64
+      // access the shared data
+      intFunc[interruptNum] = userFunc;
+  b8:	e8 2f       	mov	r30, r24
+  ba:	f0 e0       	ldi	r31, 0x00	; 0
+  bc:	ee 0f       	add	r30, r30
+  be:	ff 1f       	adc	r31, r31
+  c0:	e9 56       	subi	r30, 0x69	; 105
+  c2:	ff 4f       	sbci	r31, 0xFF	; 255
+  c4:	71 83       	std	Z+1, r23	; 0x01
+  c6:	60 83       	st	Z, r22
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/WInterrupts.c:66
+      // restore the interrupt flag
+      SREG = SaveSREG;
+  c8:	9f bf       	out	0x3f, r25	; 63
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/WInterrupts.c:76
+    // to the configuration bits in the hardware register, so we simply shift
+    // the mode into place.
+
+    // Enable the interrupt.
+
+    switch ( interruptNum )
+  ca:	81 30       	cpi	r24, 0x01	; 1
+  cc:	41 f0       	breq	.+16     	; 0xde <attachInterrupt.constprop.18+0x2e>
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/WInterrupts.c:80
+    {
+      #if NUMBER_EXTERNAL_INTERRUPTS >= 1
+        case EXTERNAL_INTERRUPT_0:
+          EICRA = (EICRA & ~((1 << ISC00) | (1 << ISC01))) | (mode << ISC00);
+  ce:	85 b7       	in	r24, 0x35	; 53
+  d0:	8c 7f       	andi	r24, 0xFC	; 252
+  d2:	82 60       	ori	r24, 0x02	; 2
+  d4:	85 bf       	out	0x35, r24	; 53
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/WInterrupts.c:81
+          EIMSK |= (1 << INT0);
+  d6:	8b b7       	in	r24, 0x3b	; 59
+  d8:	80 64       	ori	r24, 0x40	; 64
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/WInterrupts.c:96
+      #endif
+
+      #if NUMBER_EXTERNAL_INTERRUPTS >= 2 && defined(ISC11)
+        case EXTERNAL_INTERRUPT_1:
+          EICRA = (EICRA & ~((1 << ISC10) | (1 << ISC11))) | (mode << ISC10);
+          EIMSK |= (1 << INT1);
+  da:	8b bf       	out	0x3b, r24	; 59
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/WInterrupts.c:105
+      #if NUMBER_EXTERNAL_INTERRUPTS > 2
+      #error Add handlers for the additional interrupts.
+      #endif
+    }
+  }
+}
+  dc:	08 95       	ret
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/WInterrupts.c:95
+          break;
+      #endif
+
+      #if NUMBER_EXTERNAL_INTERRUPTS >= 2 && defined(ISC11)
+        case EXTERNAL_INTERRUPT_1:
+          EICRA = (EICRA & ~((1 << ISC10) | (1 << ISC11))) | (mode << ISC10);
+  de:	85 b7       	in	r24, 0x35	; 53
+  e0:	83 7f       	andi	r24, 0xF3	; 243
+  e2:	88 60       	ori	r24, 0x08	; 8
+  e4:	85 bf       	out	0x35, r24	; 53
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/WInterrupts.c:96
+          EIMSK |= (1 << INT1);
+  e6:	8b b7       	in	r24, 0x3b	; 59
+  e8:	80 68       	ori	r24, 0x80	; 128
+  ea:	f7 cf       	rjmp	.-18     	; 0xda <attachInterrupt.constprop.18+0x2a>
+
+000000ec <micros>:
+micros():
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:360
+    unsigned int r; // needed for some frequencies, optimized away otherwise
+    unsigned char f; // temporary storage for millis fraction counter
+    unsigned char q = 0; // record whether an overflow is flagged
+#endif
+    unsigned long m;
+    uint8_t t, oldSREG = SREG;
+  ec:	3f b7       	in	r19, 0x3f	; 63
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:362
+
+    cli();
+  ee:	f8 94       	cli
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:367
+#ifdef CORRECT_EXACT_MICROS
+    m = millis_timer_millis;
+    f = millis_timer_fract;
+#else
+    m = millis_timer_overflow_count;
+  f0:	80 91 93 00 	lds	r24, 0x0093	; 0x800093 <millis_timer_overflow_count>
+  f4:	90 91 94 00 	lds	r25, 0x0094	; 0x800094 <millis_timer_overflow_count+0x1>
+  f8:	a0 91 95 00 	lds	r26, 0x0095	; 0x800095 <millis_timer_overflow_count+0x2>
+  fc:	b0 91 96 00 	lds	r27, 0x0096	; 0x800096 <millis_timer_overflow_count+0x3>
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:370
+#endif
+  #if defined(TCNT0) && (TIMER_TO_USE_FOR_MILLIS == 0) && !defined(TCW0)
+    t = TCNT0;
+ 100:	22 b7       	in	r18, 0x32	; 50
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:389
+      m++;
+    #else
+      q = 1;
+    #endif
+  #elif defined(TIFR) && (TIMER_TO_USE_FOR_MILLIS == 0)
+    if ((TIFR & _BV(TOV0)) && (t < 255))
+ 102:	08 b6       	in	r0, 0x38	; 56
+ 104:	01 fe       	sbrs	r0, 1
+ 106:	05 c0       	rjmp	.+10     	; 0x112 <micros+0x26>
+ 108:	2f 3f       	cpi	r18, 0xFF	; 255
+ 10a:	19 f0       	breq	.+6      	; 0x112 <micros+0x26>
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:391
+    #ifndef CORRECT_EXACT_MICROS
+      m++;
+ 10c:	01 96       	adiw	r24, 0x01	; 1
+ 10e:	a1 1d       	adc	r26, r1
+ 110:	b1 1d       	adc	r27, r1
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:411
+    #else
+      q = 1;
+    #endif
+  #endif
+
+    SREG = oldSREG;
+ 112:	3f bf       	out	0x3f, r19	; 63
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:453
+  #else
+  #if F_CPU < 1000000L
+    return ((m << 8) + t) * MillisTimer_Prescale_Value * (1000000L/F_CPU);
+  #else
+    #if (MillisTimer_Prescale_Value % clockCyclesPerMicrosecond() == 0 && (F_CPU % 1000000 == 0 )) // Can we just do it the naive way? If so great!
+      return ((m << 8) + t) * (MillisTimer_Prescale_Value / clockCyclesPerMicrosecond());
+ 114:	ba 2f       	mov	r27, r26
+ 116:	a9 2f       	mov	r26, r25
+ 118:	98 2f       	mov	r25, r24
+ 11a:	88 27       	eor	r24, r24
+ 11c:	bc 01       	movw	r22, r24
+ 11e:	cd 01       	movw	r24, r26
+ 120:	62 0f       	add	r22, r18
+ 122:	71 1d       	adc	r23, r1
+ 124:	81 1d       	adc	r24, r1
+ 126:	91 1d       	adc	r25, r1
+ 128:	43 e0       	ldi	r20, 0x03	; 3
+ 12a:	66 0f       	add	r22, r22
+ 12c:	77 1f       	adc	r23, r23
+ 12e:	88 1f       	adc	r24, r24
+ 130:	99 1f       	adc	r25, r25
+ 132:	4a 95       	dec	r20
+ 134:	d1 f7       	brne	.-12     	; 0x12a <micros+0x3e>
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:508
+      //return ((m << 8 )/clockCyclesPerMicrosecond()* MillisTimer_Prescale_Value) + ((t+(((m<<8)%clockCyclesPerMicrosecond())) * MillisTimer_Prescale_Value / clockCyclesPerMicrosecond()));
+      return ((m << 8 )/clockCyclesPerMicrosecond()* MillisTimer_Prescale_Value) + (t * MillisTimer_Prescale_Value / clockCyclesPerMicrosecond());
+    #endif
+  #endif
+  #endif // !CORRECT_EXACT_MICROS
+  }
+ 136:	08 95       	ret
+
+00000138 <delay>:
+delay():
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:516
+    // Empty
+  }
+  void yield(void) __attribute__ ((weak, alias("__empty")));
+
+  void delay(unsigned long ms)
+  {
+ 138:	cf 92       	push	r12
+ 13a:	df 92       	push	r13
+ 13c:	ef 92       	push	r14
+ 13e:	ff 92       	push	r15
+ 140:	cf 93       	push	r28
+ 142:	df 93       	push	r29
+ 144:	6b 01       	movw	r12, r22
+ 146:	7c 01       	movw	r14, r24
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:518
+    #if (F_CPU>=1000000L)
+    uint16_t start = (uint16_t)micros();
+ 148:	d1 df       	rcall	.-94     	; 0xec <micros>
+ 14a:	eb 01       	movw	r28, r22
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:522
+
+    while (ms > 0) {
+      yield();
+      while (((uint16_t)micros() - start) >= 1000 && ms) {
+ 14c:	cf df       	rcall	.-98     	; 0xec <micros>
+ 14e:	6c 1b       	sub	r22, r28
+ 150:	7d 0b       	sbc	r23, r29
+ 152:	68 3e       	cpi	r22, 0xE8	; 232
+ 154:	73 40       	sbci	r23, 0x03	; 3
+ 156:	a0 f0       	brcs	.+40     	; 0x180 <__stack+0x21>
+ 158:	c1 14       	cp	r12, r1
+ 15a:	d1 04       	cpc	r13, r1
+ 15c:	e1 04       	cpc	r14, r1
+ 15e:	f1 04       	cpc	r15, r1
+ 160:	39 f4       	brne	.+14     	; 0x170 <__stack+0x11>
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:532
+    #else
+    uint32_t start = millis();
+    while((millis() - start) < ms)  /* NOP */yield();
+    return;
+    #endif
+  }
+ 162:	df 91       	pop	r29
+ 164:	cf 91       	pop	r28
+ 166:	ff 90       	pop	r15
+ 168:	ef 90       	pop	r14
+ 16a:	df 90       	pop	r13
+ 16c:	cf 90       	pop	r12
+ 16e:	08 95       	ret
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:523
+    uint16_t start = (uint16_t)micros();
+
+    while (ms > 0) {
+      yield();
+      while (((uint16_t)micros() - start) >= 1000 && ms) {
+        ms--;
+ 170:	81 e0       	ldi	r24, 0x01	; 1
+ 172:	c8 1a       	sub	r12, r24
+ 174:	d1 08       	sbc	r13, r1
+ 176:	e1 08       	sbc	r14, r1
+ 178:	f1 08       	sbc	r15, r1
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:524
+        start += 1000;
+ 17a:	c8 51       	subi	r28, 0x18	; 24
+ 17c:	dc 4f       	sbci	r29, 0xFC	; 252
+ 17e:	e6 cf       	rjmp	.-52     	; 0x14c <delay+0x14>
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:520
+  void delay(unsigned long ms)
+  {
+    #if (F_CPU>=1000000L)
+    uint16_t start = (uint16_t)micros();
+
+    while (ms > 0) {
+ 180:	c1 14       	cp	r12, r1
+ 182:	d1 04       	cpc	r13, r1
+ 184:	e1 04       	cpc	r14, r1
+ 186:	f1 04       	cpc	r15, r1
+ 188:	09 f7       	brne	.-62     	; 0x14c <delay+0x14>
+ 18a:	eb cf       	rjmp	.-42     	; 0x162 <__stack+0x3>
+
+0000018c <WIEGAND::ReadD1()>:
+_ZN7WIEGAND6ReadD1Ev():
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:79
+	_lastWiegand = millis();	// Keep track of last wiegand bit received
+}
+
+INTERRUPT_ATTR void WIEGAND::ReadD1()
+{
+	_bitCount ++;				// Increment bit count for Interrupt connected to D1
+ 18c:	80 91 84 00 	lds	r24, 0x0084	; 0x800084 <WIEGAND::_bitCount>
+ 190:	90 91 85 00 	lds	r25, 0x0085	; 0x800085 <WIEGAND::_bitCount+0x1>
+ 194:	01 96       	adiw	r24, 0x01	; 1
+ 196:	90 93 85 00 	sts	0x0085, r25	; 0x800085 <WIEGAND::_bitCount+0x1>
+ 19a:	80 93 84 00 	sts	0x0084, r24	; 0x800084 <WIEGAND::_bitCount>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:80
+	if (_bitCount>31)			// If bit count more than 31, process high bits
+ 19e:	80 91 84 00 	lds	r24, 0x0084	; 0x800084 <WIEGAND::_bitCount>
+ 1a2:	90 91 85 00 	lds	r25, 0x0085	; 0x800085 <WIEGAND::_bitCount+0x1>
+ 1a6:	80 97       	sbiw	r24, 0x20	; 32
+ 1a8:	b4 f1       	brlt	.+108    	; 0x216 <WIEGAND::ReadD1()+0x8a>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:82
+	{
+		_cardTempHigh |= ((0x80000000 & _cardTemp)>>31);	// shift value to high bits
+ 1aa:	80 91 80 00 	lds	r24, 0x0080	; 0x800080 <WIEGAND::_cardTemp>
+ 1ae:	90 91 81 00 	lds	r25, 0x0081	; 0x800081 <WIEGAND::_cardTemp+0x1>
+ 1b2:	a0 91 82 00 	lds	r26, 0x0082	; 0x800082 <WIEGAND::_cardTemp+0x2>
+ 1b6:	b0 91 83 00 	lds	r27, 0x0083	; 0x800083 <WIEGAND::_cardTemp+0x3>
+ 1ba:	40 91 7c 00 	lds	r20, 0x007C	; 0x80007c <__data_end>
+ 1be:	50 91 7d 00 	lds	r21, 0x007D	; 0x80007d <__data_end+0x1>
+ 1c2:	60 91 7e 00 	lds	r22, 0x007E	; 0x80007e <__data_end+0x2>
+ 1c6:	70 91 7f 00 	lds	r23, 0x007F	; 0x80007f <__data_end+0x3>
+ 1ca:	88 27       	eor	r24, r24
+ 1cc:	b7 fd       	sbrc	r27, 7
+ 1ce:	83 95       	inc	r24
+ 1d0:	99 27       	eor	r25, r25
+ 1d2:	aa 27       	eor	r26, r26
+ 1d4:	bb 27       	eor	r27, r27
+ 1d6:	84 2b       	or	r24, r20
+ 1d8:	95 2b       	or	r25, r21
+ 1da:	a6 2b       	or	r26, r22
+ 1dc:	b7 2b       	or	r27, r23
+ 1de:	80 93 7c 00 	sts	0x007C, r24	; 0x80007c <__data_end>
+ 1e2:	90 93 7d 00 	sts	0x007D, r25	; 0x80007d <__data_end+0x1>
+ 1e6:	a0 93 7e 00 	sts	0x007E, r26	; 0x80007e <__data_end+0x2>
+ 1ea:	b0 93 7f 00 	sts	0x007F, r27	; 0x80007f <__data_end+0x3>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:83
+		_cardTempHigh <<= 1;
+ 1ee:	80 91 7c 00 	lds	r24, 0x007C	; 0x80007c <__data_end>
+ 1f2:	90 91 7d 00 	lds	r25, 0x007D	; 0x80007d <__data_end+0x1>
+ 1f6:	a0 91 7e 00 	lds	r26, 0x007E	; 0x80007e <__data_end+0x2>
+ 1fa:	b0 91 7f 00 	lds	r27, 0x007F	; 0x80007f <__data_end+0x3>
+ 1fe:	88 0f       	add	r24, r24
+ 200:	99 1f       	adc	r25, r25
+ 202:	aa 1f       	adc	r26, r26
+ 204:	bb 1f       	adc	r27, r27
+ 206:	80 93 7c 00 	sts	0x007C, r24	; 0x80007c <__data_end>
+ 20a:	90 93 7d 00 	sts	0x007D, r25	; 0x80007d <__data_end+0x1>
+ 20e:	a0 93 7e 00 	sts	0x007E, r26	; 0x80007e <__data_end+0x2>
+ 212:	b0 93 7f 00 	sts	0x007F, r27	; 0x80007f <__data_end+0x3>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:89
+		_cardTemp |= 1;
+		_cardTemp <<=1;
+	}
+	else
+	{
+		_cardTemp |= 1;			// D1 represent binary 1, so OR card data with 1 then
+ 216:	80 91 80 00 	lds	r24, 0x0080	; 0x800080 <WIEGAND::_cardTemp>
+ 21a:	90 91 81 00 	lds	r25, 0x0081	; 0x800081 <WIEGAND::_cardTemp+0x1>
+ 21e:	a0 91 82 00 	lds	r26, 0x0082	; 0x800082 <WIEGAND::_cardTemp+0x2>
+ 222:	b0 91 83 00 	lds	r27, 0x0083	; 0x800083 <WIEGAND::_cardTemp+0x3>
+ 226:	81 60       	ori	r24, 0x01	; 1
+ 228:	80 93 80 00 	sts	0x0080, r24	; 0x800080 <WIEGAND::_cardTemp>
+ 22c:	90 93 81 00 	sts	0x0081, r25	; 0x800081 <WIEGAND::_cardTemp+0x1>
+ 230:	a0 93 82 00 	sts	0x0082, r26	; 0x800082 <WIEGAND::_cardTemp+0x2>
+ 234:	b0 93 83 00 	sts	0x0083, r27	; 0x800083 <WIEGAND::_cardTemp+0x3>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:90
+		_cardTemp <<= 1;		// left shift card data
+ 238:	80 91 80 00 	lds	r24, 0x0080	; 0x800080 <WIEGAND::_cardTemp>
+ 23c:	90 91 81 00 	lds	r25, 0x0081	; 0x800081 <WIEGAND::_cardTemp+0x1>
+ 240:	a0 91 82 00 	lds	r26, 0x0082	; 0x800082 <WIEGAND::_cardTemp+0x2>
+ 244:	b0 91 83 00 	lds	r27, 0x0083	; 0x800083 <WIEGAND::_cardTemp+0x3>
+ 248:	88 0f       	add	r24, r24
+ 24a:	99 1f       	adc	r25, r25
+ 24c:	aa 1f       	adc	r26, r26
+ 24e:	bb 1f       	adc	r27, r27
+ 250:	80 93 80 00 	sts	0x0080, r24	; 0x800080 <WIEGAND::_cardTemp>
+ 254:	90 93 81 00 	sts	0x0081, r25	; 0x800081 <WIEGAND::_cardTemp+0x1>
+ 258:	a0 93 82 00 	sts	0x0082, r26	; 0x800082 <WIEGAND::_cardTemp+0x2>
+ 25c:	b0 93 83 00 	sts	0x0083, r27	; 0x800083 <WIEGAND::_cardTemp+0x3>
+millis():
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:341
+  }
+
+  unsigned long millis()
+  {
+    unsigned long m;
+    uint8_t oldSREG = SREG;
+ 260:	2f b7       	in	r18, 0x3f	; 63
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:345
+
+    // disable interrupts while we read millis_timer_millis or we might get an
+    // inconsistent value (e.g. in the middle of a write to millis_timer_millis)
+    cli();
+ 262:	f8 94       	cli
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:346
+    m = millis_timer_millis;
+ 264:	80 91 8f 00 	lds	r24, 0x008F	; 0x80008f <millis_timer_millis>
+ 268:	90 91 90 00 	lds	r25, 0x0090	; 0x800090 <millis_timer_millis+0x1>
+ 26c:	a0 91 91 00 	lds	r26, 0x0091	; 0x800091 <millis_timer_millis+0x2>
+ 270:	b0 91 92 00 	lds	r27, 0x0092	; 0x800092 <millis_timer_millis+0x3>
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:347
+    SREG = oldSREG;
+ 274:	2f bf       	out	0x3f, r18	; 63
+_ZN7WIEGAND6ReadD1Ev():
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:92
+	}
+	_lastWiegand = millis();	// Keep track of last wiegand bit received
+ 276:	80 93 86 00 	sts	0x0086, r24	; 0x800086 <WIEGAND::_lastWiegand>
+ 27a:	90 93 87 00 	sts	0x0087, r25	; 0x800087 <WIEGAND::_lastWiegand+0x1>
+ 27e:	a0 93 88 00 	sts	0x0088, r26	; 0x800088 <WIEGAND::_lastWiegand+0x2>
+ 282:	b0 93 89 00 	sts	0x0089, r27	; 0x800089 <WIEGAND::_lastWiegand+0x3>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:93
+}
+ 286:	08 95       	ret
+
+00000288 <Print::write(unsigned char const*, unsigned int)>:
+_ZN5Print5writeEPKhj():
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/Print.cpp:34
+
+// Public Methods //////////////////////////////////////////////////////////////
+
+/* default implementation: may be overridden */
+size_t Print::write(const uint8_t *buffer, size_t size)
+{
+ 288:	cf 92       	push	r12
+ 28a:	df 92       	push	r13
+ 28c:	ef 92       	push	r14
+ 28e:	ff 92       	push	r15
+ 290:	0f 93       	push	r16
+ 292:	1f 93       	push	r17
+ 294:	cf 93       	push	r28
+ 296:	df 93       	push	r29
+ 298:	6c 01       	movw	r12, r24
+ 29a:	eb 01       	movw	r28, r22
+ 29c:	7b 01       	movw	r14, r22
+ 29e:	e4 0e       	add	r14, r20
+ 2a0:	f5 1e       	adc	r15, r21
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/Print.cpp:35
+  size_t n = 0;
+ 2a2:	10 e0       	ldi	r17, 0x00	; 0
+ 2a4:	00 e0       	ldi	r16, 0x00	; 0
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/Print.cpp:36
+  while (size--) {
+ 2a6:	ce 15       	cp	r28, r14
+ 2a8:	df 05       	cpc	r29, r15
+ 2aa:	61 f0       	breq	.+24     	; 0x2c4 <Print::write(unsigned char const*, unsigned int)+0x3c>
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/Print.cpp:37
+    n += write(*buffer++);
+ 2ac:	69 91       	ld	r22, Y+
+ 2ae:	d6 01       	movw	r26, r12
+ 2b0:	ed 91       	ld	r30, X+
+ 2b2:	fc 91       	ld	r31, X
+ 2b4:	01 90       	ld	r0, Z+
+ 2b6:	f0 81       	ld	r31, Z
+ 2b8:	e0 2d       	mov	r30, r0
+ 2ba:	c6 01       	movw	r24, r12
+ 2bc:	09 95       	icall
+ 2be:	08 0f       	add	r16, r24
+ 2c0:	19 1f       	adc	r17, r25
+ 2c2:	f1 cf       	rjmp	.-30     	; 0x2a6 <Print::write(unsigned char const*, unsigned int)+0x1e>
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/Print.cpp:40
+  }
+  return n;
+}
+ 2c4:	c8 01       	movw	r24, r16
+ 2c6:	df 91       	pop	r29
+ 2c8:	cf 91       	pop	r28
+ 2ca:	1f 91       	pop	r17
+ 2cc:	0f 91       	pop	r16
+ 2ce:	ff 90       	pop	r15
+ 2d0:	ef 90       	pop	r14
+ 2d2:	df 90       	pop	r13
+ 2d4:	cf 90       	pop	r12
+ 2d6:	08 95       	ret
+
+000002d8 <HardwareSerial::write(unsigned char)>:
+_ZN14HardwareSerial5writeEh():
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:361
+  while (_tx_buffer->head != _tx_buffer->tail)
+    ;
+}
+
+size_t HardwareSerial::write(uint8_t c)
+{
+ 2d8:	fc 01       	movw	r30, r24
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:362
+  byte i = (_tx_buffer->head + 1) % SERIAL_BUFFER_SIZE;
+ 2da:	a6 85       	ldd	r26, Z+14	; 0x0e
+ 2dc:	b7 85       	ldd	r27, Z+15	; 0x0f
+ 2de:	50 96       	adiw	r26, 0x10	; 16
+ 2e0:	2c 91       	ld	r18, X
+ 2e2:	50 97       	sbiw	r26, 0x10	; 16
+ 2e4:	30 e0       	ldi	r19, 0x00	; 0
+ 2e6:	2f 5f       	subi	r18, 0xFF	; 255
+ 2e8:	3f 4f       	sbci	r19, 0xFF	; 255
+ 2ea:	2f 70       	andi	r18, 0x0F	; 15
+ 2ec:	33 27       	eor	r19, r19
+ 2ee:	82 2f       	mov	r24, r18
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:367
+
+  // If the output buffer is full, there's nothing for it other than to
+  // wait for the interrupt handler to empty it a bit
+  // ???: return 0 here instead?
+  while (i == _tx_buffer->tail)
+ 2f0:	51 96       	adiw	r26, 0x11	; 17
+ 2f2:	9c 91       	ld	r25, X
+ 2f4:	51 97       	sbiw	r26, 0x11	; 17
+ 2f6:	98 17       	cp	r25, r24
+ 2f8:	d9 f3       	breq	.-10     	; 0x2f0 <HardwareSerial::write(unsigned char)+0x18>
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:370
+    ;
+
+  _tx_buffer->buffer[_tx_buffer->head] = c;
+ 2fa:	50 96       	adiw	r26, 0x10	; 16
+ 2fc:	8c 91       	ld	r24, X
+ 2fe:	50 97       	sbiw	r26, 0x10	; 16
+ 300:	a8 0f       	add	r26, r24
+ 302:	b1 1d       	adc	r27, r1
+ 304:	6c 93       	st	X, r22
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:371
+  _tx_buffer->head = i;
+ 306:	a6 85       	ldd	r26, Z+14	; 0x0e
+ 308:	b7 85       	ldd	r27, Z+15	; 0x0f
+ 30a:	50 96       	adiw	r26, 0x10	; 16
+ 30c:	2c 93       	st	X, r18
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:374
+
+  #if ( defined(UBRRH) || defined(UBRR0H) || defined(UBRR1H) )
+  sbi(*_ucsrb, _udrie);
+ 30e:	a6 89       	ldd	r26, Z+22	; 0x16
+ 310:	b7 89       	ldd	r27, Z+23	; 0x17
+ 312:	8c 91       	ld	r24, X
+ 314:	95 8d       	ldd	r25, Z+29	; 0x1d
+ 316:	21 e0       	ldi	r18, 0x01	; 1
+ 318:	30 e0       	ldi	r19, 0x00	; 0
+ 31a:	01 c0       	rjmp	.+2      	; 0x31e <HardwareSerial::write(unsigned char)+0x46>
+ 31c:	22 0f       	add	r18, r18
+ 31e:	9a 95       	dec	r25
+ 320:	ea f7       	brpl	.-6      	; 0x31c <HardwareSerial::write(unsigned char)+0x44>
+ 322:	82 2b       	or	r24, r18
+ 324:	8c 93       	st	X, r24
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:387
+  }
+  #endif
+
+
+  return 1;
+}
+ 326:	81 e0       	ldi	r24, 0x01	; 1
+ 328:	90 e0       	ldi	r25, 0x00	; 0
+ 32a:	08 95       	ret
+
+0000032c <HardwareSerial::flush()>:
+_ZN14HardwareSerial5flushEv():
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:356
+  }
+}
+
+void HardwareSerial::flush()
+{
+  while (_tx_buffer->head != _tx_buffer->tail)
+ 32c:	dc 01       	movw	r26, r24
+ 32e:	1e 96       	adiw	r26, 0x0e	; 14
+ 330:	ed 91       	ld	r30, X+
+ 332:	fc 91       	ld	r31, X
+ 334:	90 89       	ldd	r25, Z+16	; 0x10
+ 336:	81 89       	ldd	r24, Z+17	; 0x11
+ 338:	98 13       	cpse	r25, r24
+ 33a:	fc cf       	rjmp	.-8      	; 0x334 <HardwareSerial::flush()+0x8>
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:358
+    ;
+}
+ 33c:	08 95       	ret
+
+0000033e <HardwareSerial::read()>:
+_ZN14HardwareSerial4readEv():
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:345
+}
+
+int HardwareSerial::read(void)
+{
+  // if the head isn't ahead of the tail, we don't have any characters
+  if (_rx_buffer->head == _rx_buffer->tail) {
+ 33e:	dc 01       	movw	r26, r24
+ 340:	1c 96       	adiw	r26, 0x0c	; 12
+ 342:	ed 91       	ld	r30, X+
+ 344:	fc 91       	ld	r31, X
+ 346:	90 89       	ldd	r25, Z+16	; 0x10
+ 348:	81 89       	ldd	r24, Z+17	; 0x11
+ 34a:	98 17       	cp	r25, r24
+ 34c:	71 f0       	breq	.+28     	; 0x36a <HardwareSerial::read()+0x2c>
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:348
+    return -1;
+  } else {
+    unsigned char c = _rx_buffer->buffer[_rx_buffer->tail];
+ 34e:	a1 89       	ldd	r26, Z+17	; 0x11
+ 350:	ae 0f       	add	r26, r30
+ 352:	bf 2f       	mov	r27, r31
+ 354:	b1 1d       	adc	r27, r1
+ 356:	8c 91       	ld	r24, X
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:349
+    _rx_buffer->tail = (_rx_buffer->tail + 1) % SERIAL_BUFFER_SIZE;
+ 358:	21 89       	ldd	r18, Z+17	; 0x11
+ 35a:	30 e0       	ldi	r19, 0x00	; 0
+ 35c:	2f 5f       	subi	r18, 0xFF	; 255
+ 35e:	3f 4f       	sbci	r19, 0xFF	; 255
+ 360:	2f 70       	andi	r18, 0x0F	; 15
+ 362:	33 27       	eor	r19, r19
+ 364:	21 8b       	std	Z+17, r18	; 0x11
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:350
+    return c;
+ 366:	90 e0       	ldi	r25, 0x00	; 0
+ 368:	08 95       	ret
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:346
+
+int HardwareSerial::read(void)
+{
+  // if the head isn't ahead of the tail, we don't have any characters
+  if (_rx_buffer->head == _rx_buffer->tail) {
+    return -1;
+ 36a:	8f ef       	ldi	r24, 0xFF	; 255
+ 36c:	9f ef       	ldi	r25, 0xFF	; 255
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:352
+  } else {
+    unsigned char c = _rx_buffer->buffer[_rx_buffer->tail];
+    _rx_buffer->tail = (_rx_buffer->tail + 1) % SERIAL_BUFFER_SIZE;
+    return c;
+  }
+}
+ 36e:	08 95       	ret
+
+00000370 <HardwareSerial::peek()>:
+_ZN14HardwareSerial4peekEv():
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:335
+  return (unsigned int)(SERIAL_BUFFER_SIZE + _rx_buffer->head - _rx_buffer->tail) % SERIAL_BUFFER_SIZE;
+}
+
+int HardwareSerial::peek(void)
+{
+  if (_rx_buffer->head == _rx_buffer->tail) {
+ 370:	dc 01       	movw	r26, r24
+ 372:	1c 96       	adiw	r26, 0x0c	; 12
+ 374:	ed 91       	ld	r30, X+
+ 376:	fc 91       	ld	r31, X
+ 378:	90 89       	ldd	r25, Z+16	; 0x10
+ 37a:	81 89       	ldd	r24, Z+17	; 0x11
+ 37c:	98 17       	cp	r25, r24
+ 37e:	31 f0       	breq	.+12     	; 0x38c <HardwareSerial::peek()+0x1c>
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:338
+    return -1;
+  } else {
+    return _rx_buffer->buffer[_rx_buffer->tail];
+ 380:	81 89       	ldd	r24, Z+17	; 0x11
+ 382:	e8 0f       	add	r30, r24
+ 384:	f1 1d       	adc	r31, r1
+ 386:	80 81       	ld	r24, Z
+ 388:	90 e0       	ldi	r25, 0x00	; 0
+ 38a:	08 95       	ret
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:336
+}
+
+int HardwareSerial::peek(void)
+{
+  if (_rx_buffer->head == _rx_buffer->tail) {
+    return -1;
+ 38c:	8f ef       	ldi	r24, 0xFF	; 255
+ 38e:	9f ef       	ldi	r25, 0xFF	; 255
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:340
+  } else {
+    return _rx_buffer->buffer[_rx_buffer->tail];
+  }
+}
+ 390:	08 95       	ret
+
+00000392 <HardwareSerial::available()>:
+_ZN14HardwareSerial9availableEv():
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:330
+  _rx_buffer->head = _rx_buffer->tail;
+}
+
+int HardwareSerial::available(void)
+{
+  return (unsigned int)(SERIAL_BUFFER_SIZE + _rx_buffer->head - _rx_buffer->tail) % SERIAL_BUFFER_SIZE;
+ 392:	dc 01       	movw	r26, r24
+ 394:	1c 96       	adiw	r26, 0x0c	; 12
+ 396:	ed 91       	ld	r30, X+
+ 398:	fc 91       	ld	r31, X
+ 39a:	80 89       	ldd	r24, Z+16	; 0x10
+ 39c:	21 89       	ldd	r18, Z+17	; 0x11
+ 39e:	90 e0       	ldi	r25, 0x00	; 0
+ 3a0:	40 96       	adiw	r24, 0x10	; 16
+ 3a2:	82 1b       	sub	r24, r18
+ 3a4:	91 09       	sbc	r25, r1
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:331
+}
+ 3a6:	8f 70       	andi	r24, 0x0F	; 15
+ 3a8:	99 27       	eor	r25, r25
+ 3aa:	08 95       	ret
+
+000003ac <WIEGAND::ReadD0()>:
+_ZN7WIEGAND6ReadD0Ev():
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:63
+	attachInterrupt(digitalPinToInterrupt(pinD1), ReadD1, FALLING);  // Hardware interrupt - high to low pulse
+}
+
+INTERRUPT_ATTR void WIEGAND::ReadD0 ()
+{
+	_bitCount++;				// Increament bit count for Interrupt connected to D0
+ 3ac:	80 91 84 00 	lds	r24, 0x0084	; 0x800084 <WIEGAND::_bitCount>
+ 3b0:	90 91 85 00 	lds	r25, 0x0085	; 0x800085 <WIEGAND::_bitCount+0x1>
+ 3b4:	01 96       	adiw	r24, 0x01	; 1
+ 3b6:	90 93 85 00 	sts	0x0085, r25	; 0x800085 <WIEGAND::_bitCount+0x1>
+ 3ba:	80 93 84 00 	sts	0x0084, r24	; 0x800084 <WIEGAND::_bitCount>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:64
+	if (_bitCount>31)			// If bit count more than 31, process high bits
+ 3be:	80 91 84 00 	lds	r24, 0x0084	; 0x800084 <WIEGAND::_bitCount>
+ 3c2:	90 91 85 00 	lds	r25, 0x0085	; 0x800085 <WIEGAND::_bitCount+0x1>
+ 3c6:	80 97       	sbiw	r24, 0x20	; 32
+ 3c8:	b4 f1       	brlt	.+108    	; 0x436 <__LOCK_REGION_LENGTH__+0x36>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:66
+	{
+		_cardTempHigh |= ((0x80000000 & _cardTemp)>>31);	//	shift value to high bits
+ 3ca:	80 91 80 00 	lds	r24, 0x0080	; 0x800080 <WIEGAND::_cardTemp>
+ 3ce:	90 91 81 00 	lds	r25, 0x0081	; 0x800081 <WIEGAND::_cardTemp+0x1>
+ 3d2:	a0 91 82 00 	lds	r26, 0x0082	; 0x800082 <WIEGAND::_cardTemp+0x2>
+ 3d6:	b0 91 83 00 	lds	r27, 0x0083	; 0x800083 <WIEGAND::_cardTemp+0x3>
+ 3da:	40 91 7c 00 	lds	r20, 0x007C	; 0x80007c <__data_end>
+ 3de:	50 91 7d 00 	lds	r21, 0x007D	; 0x80007d <__data_end+0x1>
+ 3e2:	60 91 7e 00 	lds	r22, 0x007E	; 0x80007e <__data_end+0x2>
+ 3e6:	70 91 7f 00 	lds	r23, 0x007F	; 0x80007f <__data_end+0x3>
+ 3ea:	88 27       	eor	r24, r24
+ 3ec:	b7 fd       	sbrc	r27, 7
+ 3ee:	83 95       	inc	r24
+ 3f0:	99 27       	eor	r25, r25
+ 3f2:	aa 27       	eor	r26, r26
+ 3f4:	bb 27       	eor	r27, r27
+ 3f6:	84 2b       	or	r24, r20
+ 3f8:	95 2b       	or	r25, r21
+ 3fa:	a6 2b       	or	r26, r22
+ 3fc:	b7 2b       	or	r27, r23
+ 3fe:	80 93 7c 00 	sts	0x007C, r24	; 0x80007c <__data_end>
+ 402:	90 93 7d 00 	sts	0x007D, r25	; 0x80007d <__data_end+0x1>
+ 406:	a0 93 7e 00 	sts	0x007E, r26	; 0x80007e <__data_end+0x2>
+ 40a:	b0 93 7f 00 	sts	0x007F, r27	; 0x80007f <__data_end+0x3>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:67
+		_cardTempHigh <<= 1;
+ 40e:	80 91 7c 00 	lds	r24, 0x007C	; 0x80007c <__data_end>
+ 412:	90 91 7d 00 	lds	r25, 0x007D	; 0x80007d <__data_end+0x1>
+ 416:	a0 91 7e 00 	lds	r26, 0x007E	; 0x80007e <__data_end+0x2>
+ 41a:	b0 91 7f 00 	lds	r27, 0x007F	; 0x80007f <__data_end+0x3>
+ 41e:	88 0f       	add	r24, r24
+ 420:	99 1f       	adc	r25, r25
+ 422:	aa 1f       	adc	r26, r26
+ 424:	bb 1f       	adc	r27, r27
+ 426:	80 93 7c 00 	sts	0x007C, r24	; 0x80007c <__data_end>
+ 42a:	90 93 7d 00 	sts	0x007D, r25	; 0x80007d <__data_end+0x1>
+ 42e:	a0 93 7e 00 	sts	0x007E, r26	; 0x80007e <__data_end+0x2>
+ 432:	b0 93 7f 00 	sts	0x007F, r27	; 0x80007f <__data_end+0x3>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:72
+		_cardTemp <<=1;
+	}
+	else
+	{
+		_cardTemp <<= 1;		// D0 represent binary 0, so just left shift card data
+ 436:	80 91 80 00 	lds	r24, 0x0080	; 0x800080 <WIEGAND::_cardTemp>
+ 43a:	90 91 81 00 	lds	r25, 0x0081	; 0x800081 <WIEGAND::_cardTemp+0x1>
+ 43e:	a0 91 82 00 	lds	r26, 0x0082	; 0x800082 <WIEGAND::_cardTemp+0x2>
+ 442:	b0 91 83 00 	lds	r27, 0x0083	; 0x800083 <WIEGAND::_cardTemp+0x3>
+ 446:	88 0f       	add	r24, r24
+ 448:	99 1f       	adc	r25, r25
+ 44a:	aa 1f       	adc	r26, r26
+ 44c:	bb 1f       	adc	r27, r27
+ 44e:	80 93 80 00 	sts	0x0080, r24	; 0x800080 <WIEGAND::_cardTemp>
+ 452:	90 93 81 00 	sts	0x0081, r25	; 0x800081 <WIEGAND::_cardTemp+0x1>
+ 456:	a0 93 82 00 	sts	0x0082, r26	; 0x800082 <WIEGAND::_cardTemp+0x2>
+ 45a:	b0 93 83 00 	sts	0x0083, r27	; 0x800083 <WIEGAND::_cardTemp+0x3>
+millis():
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:341
+  }
+
+  unsigned long millis()
+  {
+    unsigned long m;
+    uint8_t oldSREG = SREG;
+ 45e:	2f b7       	in	r18, 0x3f	; 63
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:345
+
+    // disable interrupts while we read millis_timer_millis or we might get an
+    // inconsistent value (e.g. in the middle of a write to millis_timer_millis)
+    cli();
+ 460:	f8 94       	cli
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:346
+    m = millis_timer_millis;
+ 462:	80 91 8f 00 	lds	r24, 0x008F	; 0x80008f <millis_timer_millis>
+ 466:	90 91 90 00 	lds	r25, 0x0090	; 0x800090 <millis_timer_millis+0x1>
+ 46a:	a0 91 91 00 	lds	r26, 0x0091	; 0x800091 <millis_timer_millis+0x2>
+ 46e:	b0 91 92 00 	lds	r27, 0x0092	; 0x800092 <millis_timer_millis+0x3>
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:347
+    SREG = oldSREG;
+ 472:	2f bf       	out	0x3f, r18	; 63
+_ZN7WIEGAND6ReadD0Ev():
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:74
+	}
+	_lastWiegand = millis();	// Keep track of last wiegand bit received
+ 474:	80 93 86 00 	sts	0x0086, r24	; 0x800086 <WIEGAND::_lastWiegand>
+ 478:	90 93 87 00 	sts	0x0087, r25	; 0x800087 <WIEGAND::_lastWiegand+0x1>
+ 47c:	a0 93 88 00 	sts	0x0088, r26	; 0x800088 <WIEGAND::_lastWiegand+0x2>
+ 480:	b0 93 89 00 	sts	0x0089, r27	; 0x800089 <WIEGAND::_lastWiegand+0x3>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:75
+}
+ 484:	08 95       	ret
+
+00000486 <digitalWrite.constprop.15>:
+digitalWrite.constprop.15():
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:126
+      } else
+    #endif
+
+    #if defined(TCCR1A) && defined(COM1B1) // civilized parts
+      if( timer == TIMER1B){
+        TCCR1A &= ~(1<<COM1B1);
+ 486:	9f b5       	in	r25, 0x2f	; 47
+ 488:	9f 7d       	andi	r25, 0xDF	; 223
+ 48a:	9f bd       	out	0x2f, r25	; 47
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:152
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+
+  out = portOutputRegister(port);
+
+  if (val == LOW) {
+ 48c:	81 11       	cpse	r24, r1
+ 48e:	05 c0       	rjmp	.+10     	; 0x49a <digitalWrite.constprop.15+0x14>
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:153
+    uint8_t oldSREG = SREG;
+ 490:	8f b7       	in	r24, 0x3f	; 63
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:154
+    cli();
+ 492:	f8 94       	cli
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:155
+    *out &= ~bit;
+ 494:	c4 98       	cbi	0x18, 4	; 24
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:161
+    SREG = oldSREG;
+  } else {
+    uint8_t oldSREG = SREG;
+    cli();
+    *out |= bit;
+    SREG = oldSREG;
+ 496:	8f bf       	out	0x3f, r24	; 63
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:163
+  }
+}
+ 498:	08 95       	ret
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:158
+    uint8_t oldSREG = SREG;
+    cli();
+    *out &= ~bit;
+    SREG = oldSREG;
+  } else {
+    uint8_t oldSREG = SREG;
+ 49a:	8f b7       	in	r24, 0x3f	; 63
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:159
+    cli();
+ 49c:	f8 94       	cli
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:160
+    *out |= bit;
+ 49e:	c4 9a       	sbi	0x18, 4	; 24
+ 4a0:	fa cf       	rjmp	.-12     	; 0x496 <digitalWrite.constprop.15+0x10>
+
+000004a2 <mode_terima()>:
+_Z11mode_terimav():
+C:\Users\kedai\Desktop\RFID_Reader_DERE/RFID_Reader_DERE.ino:52
+  delay(10);
+}
+
+void mode_terima() 
+{
+  digitalWrite(pin_DE_RE, LOW); //kondisikan posisi terima data
+ 4a2:	80 e0       	ldi	r24, 0x00	; 0
+ 4a4:	f0 df       	rcall	.-32     	; 0x486 <digitalWrite.constprop.15>
+C:\Users\kedai\Desktop\RFID_Reader_DERE/RFID_Reader_DERE.ino:53
+  delay(5);
+ 4a6:	65 e0       	ldi	r22, 0x05	; 5
+ 4a8:	70 e0       	ldi	r23, 0x00	; 0
+ 4aa:	80 e0       	ldi	r24, 0x00	; 0
+ 4ac:	90 e0       	ldi	r25, 0x00	; 0
+ 4ae:	44 ce       	rjmp	.-888    	; 0x138 <delay>
+
+000004b0 <mode_kirim()>:
+_Z10mode_kirimv():
+C:\Users\kedai\Desktop\RFID_Reader_DERE/RFID_Reader_DERE.ino:46
+}
+
+
+void mode_kirim() 
+{
+  digitalWrite(pin_DE_RE, HIGH); //kondisikan posisi kirim data
+ 4b0:	81 e0       	ldi	r24, 0x01	; 1
+ 4b2:	e9 df       	rcall	.-46     	; 0x486 <digitalWrite.constprop.15>
+C:\Users\kedai\Desktop\RFID_Reader_DERE/RFID_Reader_DERE.ino:47
+  delay(10);
+ 4b4:	6a e0       	ldi	r22, 0x0A	; 10
+ 4b6:	70 e0       	ldi	r23, 0x00	; 0
+ 4b8:	80 e0       	ldi	r24, 0x00	; 0
+ 4ba:	90 e0       	ldi	r25, 0x00	; 0
+ 4bc:	3d ce       	rjmp	.-902    	; 0x138 <delay>
+
+000004be <pinMode>:
+pinMode():
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:33
+#define ARDUINO_MAIN
+#include "wiring_private.h"
+#include "pins_arduino.h"
+
+void pinMode(uint8_t pin, uint8_t mode)
+{
+ 4be:	cf 93       	push	r28
+ 4c0:	df 93       	push	r29
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:34
+  if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+ 4c2:	87 fd       	sbrc	r24, 7
+ 4c4:	8f ef       	ldi	r24, 0xFF	; 255
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:35
+  uint8_t bit = digitalPinToBitMask(pin);
+ 4c6:	90 e0       	ldi	r25, 0x00	; 0
+ 4c8:	fc 01       	movw	r30, r24
+ 4ca:	e0 5b       	subi	r30, 0xB0	; 176
+ 4cc:	ff 4f       	sbci	r31, 0xFF	; 255
+ 4ce:	24 91       	lpm	r18, Z
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:36
+  uint8_t port = digitalPinToPort(pin);
+ 4d0:	82 5c       	subi	r24, 0xC2	; 194
+ 4d2:	9f 4f       	sbci	r25, 0xFF	; 255
+ 4d4:	fc 01       	movw	r30, r24
+ 4d6:	84 91       	lpm	r24, Z
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:39
+  volatile uint8_t *reg, *out;
+
+  if (port == NOT_A_PIN) return;
+ 4d8:	88 23       	and	r24, r24
+ 4da:	d1 f0       	breq	.+52     	; 0x510 <pinMode+0x52>
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:41
+
+  reg = portModeRegister(port);
+ 4dc:	90 e0       	ldi	r25, 0x00	; 0
+ 4de:	88 0f       	add	r24, r24
+ 4e0:	99 1f       	adc	r25, r25
+ 4e2:	fc 01       	movw	r30, r24
+ 4e4:	e6 5d       	subi	r30, 0xD6	; 214
+ 4e6:	ff 4f       	sbci	r31, 0xFF	; 255
+ 4e8:	a5 91       	lpm	r26, Z+
+ 4ea:	b4 91       	lpm	r27, Z
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:42
+  out = portOutputRegister(port);
+ 4ec:	fc 01       	movw	r30, r24
+ 4ee:	ec 5c       	subi	r30, 0xCC	; 204
+ 4f0:	ff 4f       	sbci	r31, 0xFF	; 255
+ 4f2:	c5 91       	lpm	r28, Z+
+ 4f4:	d4 91       	lpm	r29, Z
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:44
+
+  if (mode == INPUT) {
+ 4f6:	61 11       	cpse	r22, r1
+ 4f8:	0e c0       	rjmp	.+28     	; 0x516 <pinMode+0x58>
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:45
+    uint8_t oldSREG = SREG;
+ 4fa:	9f b7       	in	r25, 0x3f	; 63
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:46
+                cli();
+ 4fc:	f8 94       	cli
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:47
+    *reg &= ~bit;
+ 4fe:	8c 91       	ld	r24, X
+ 500:	e2 2f       	mov	r30, r18
+ 502:	e0 95       	com	r30
+ 504:	8e 23       	and	r24, r30
+ 506:	8c 93       	st	X, r24
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:48
+    *out &= ~bit;
+ 508:	28 81       	ld	r18, Y
+ 50a:	e2 23       	and	r30, r18
+ 50c:	e8 83       	st	Y, r30
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:49
+    SREG = oldSREG;
+ 50e:	9f bf       	out	0x3f, r25	; 63
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:62
+    uint8_t oldSREG = SREG;
+                cli();
+    *reg |= bit;
+    SREG = oldSREG;
+  }
+}
+ 510:	df 91       	pop	r29
+ 512:	cf 91       	pop	r28
+ 514:	08 95       	ret
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:57
+                cli();
+    *reg &= ~bit;
+    *out |= bit;
+    SREG = oldSREG;
+  } else {
+    uint8_t oldSREG = SREG;
+ 516:	8f b7       	in	r24, 0x3f	; 63
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:58
+                cli();
+ 518:	f8 94       	cli
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:59
+    *reg |= bit;
+ 51a:	ec 91       	ld	r30, X
+ 51c:	e2 2b       	or	r30, r18
+ 51e:	ec 93       	st	X, r30
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring_digital.c:60
+    SREG = oldSREG;
+ 520:	8f bf       	out	0x3f, r24	; 63
+ 522:	f6 cf       	rjmp	.-20     	; 0x510 <pinMode+0x52>
+
+00000524 <Print::printNumber(unsigned long, unsigned char) [clone .constprop.9]>:
+_ZN5Print11printNumberEmh.constprop.9():
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/Print.cpp:257
+
+#endif
+
+// Private Methods /////////////////////////////////////////////////////////////
+
+size_t Print::printNumber(unsigned long n, uint8_t base) {
+ 524:	8f 92       	push	r8
+ 526:	9f 92       	push	r9
+ 528:	af 92       	push	r10
+ 52a:	bf 92       	push	r11
+ 52c:	ef 92       	push	r14
+ 52e:	ff 92       	push	r15
+ 530:	0f 93       	push	r16
+ 532:	1f 93       	push	r17
+ 534:	cf 93       	push	r28
+ 536:	df 93       	push	r29
+ 538:	cd b7       	in	r28, 0x3d	; 61
+ 53a:	de b7       	in	r29, 0x3e	; 62
+ 53c:	a1 97       	sbiw	r28, 0x21	; 33
+ 53e:	0f b6       	in	r0, 0x3f	; 63
+ 540:	f8 94       	cli
+ 542:	de bf       	out	0x3e, r29	; 62
+ 544:	0f be       	out	0x3f, r0	; 63
+ 546:	cd bf       	out	0x3d, r28	; 61
+ 548:	16 2f       	mov	r17, r22
+ 54a:	04 2f       	mov	r16, r20
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/Print.cpp:261
+  char buf[8 * sizeof(long) + 1]; // Assumes 8-bit chars plus zero byte.
+  char *str = &buf[sizeof(buf) - 1];
+
+  *str = '\0';
+ 54c:	19 a2       	std	Y+33, r1	; 0x21
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/Print.cpp:264
+
+  // prevent crash if called with base == 1
+  if (base < 2) base = 10;
+ 54e:	42 30       	cpi	r20, 0x02	; 2
+ 550:	08 f4       	brcc	.+2      	; 0x554 <Print::printNumber(unsigned long, unsigned char) [clone .constprop.9]+0x30>
+ 552:	0a e0       	ldi	r16, 0x0A	; 10
+ 554:	7e 01       	movw	r14, r28
+ 556:	21 e2       	ldi	r18, 0x21	; 33
+ 558:	e2 0e       	add	r14, r18
+ 55a:	f1 1c       	adc	r15, r1
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/Print.cpp:268
+
+  do {
+    unsigned long m = n;
+    n /= base;
+ 55c:	80 2e       	mov	r8, r16
+ 55e:	91 2c       	mov	r9, r1
+ 560:	b1 2c       	mov	r11, r1
+ 562:	a1 2c       	mov	r10, r1
+ 564:	61 2f       	mov	r22, r17
+ 566:	a5 01       	movw	r20, r10
+ 568:	94 01       	movw	r18, r8
+ 56a:	f1 d3       	rcall	.+2018   	; 0xd4e <__udivmodsi4>
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/Print.cpp:269
+    char c = m - base * n;
+ 56c:	80 2f       	mov	r24, r16
+ 56e:	62 2f       	mov	r22, r18
+ 570:	e5 d3       	rcall	.+1994   	; 0xd3c <__mulqi3>
+ 572:	18 1b       	sub	r17, r24
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/Print.cpp:270
+    *--str = c < 10 ? c + '0' : c + 'A' - 10;
+ 574:	1a 30       	cpi	r17, 0x0A	; 10
+ 576:	3c f5       	brge	.+78     	; 0x5c6 <Print::printNumber(unsigned long, unsigned char) [clone .constprop.9]+0xa2>
+ 578:	10 5d       	subi	r17, 0xD0	; 208
+ 57a:	f7 01       	movw	r30, r14
+ 57c:	12 93       	st	-Z, r17
+ 57e:	7f 01       	movw	r14, r30
+ 580:	12 2f       	mov	r17, r18
+ 582:	73 2f       	mov	r23, r19
+ 584:	ca 01       	movw	r24, r20
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/Print.cpp:271
+  } while(n);
+ 586:	23 2b       	or	r18, r19
+ 588:	24 2b       	or	r18, r20
+ 58a:	25 2b       	or	r18, r21
+ 58c:	59 f7       	brne	.-42     	; 0x564 <Print::printNumber(unsigned long, unsigned char) [clone .constprop.9]+0x40>
+write():
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/Print.h:81
+
+    int getWriteError() { return write_error; }
+    void clearWriteError() { setWriteError(0); }
+
+    virtual size_t write(uint8_t) = 0;
+    size_t write(const char *str) { return write((const uint8_t *)str, strlen(str)); }
+ 58e:	01 90       	ld	r0, Z+
+ 590:	00 20       	and	r0, r0
+ 592:	e9 f7       	brne	.-6      	; 0x58e <Print::printNumber(unsigned long, unsigned char) [clone .constprop.9]+0x6a>
+ 594:	31 97       	sbiw	r30, 0x01	; 1
+ 596:	af 01       	movw	r20, r30
+ 598:	4e 19       	sub	r20, r14
+ 59a:	5f 09       	sbc	r21, r15
+ 59c:	b7 01       	movw	r22, r14
+ 59e:	8f eb       	ldi	r24, 0xBF	; 191
+ 5a0:	90 e0       	ldi	r25, 0x00	; 0
+ 5a2:	72 de       	rcall	.-796    	; 0x288 <Print::write(unsigned char const*, unsigned int)>
+_ZN5Print11printNumberEmh.constprop.9():
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/Print.cpp:274
+
+  return write(str);
+}
+ 5a4:	a1 96       	adiw	r28, 0x21	; 33
+ 5a6:	0f b6       	in	r0, 0x3f	; 63
+ 5a8:	f8 94       	cli
+ 5aa:	de bf       	out	0x3e, r29	; 62
+ 5ac:	0f be       	out	0x3f, r0	; 63
+ 5ae:	cd bf       	out	0x3d, r28	; 61
+ 5b0:	df 91       	pop	r29
+ 5b2:	cf 91       	pop	r28
+ 5b4:	1f 91       	pop	r17
+ 5b6:	0f 91       	pop	r16
+ 5b8:	ff 90       	pop	r15
+ 5ba:	ef 90       	pop	r14
+ 5bc:	bf 90       	pop	r11
+ 5be:	af 90       	pop	r10
+ 5c0:	9f 90       	pop	r9
+ 5c2:	8f 90       	pop	r8
+ 5c4:	08 95       	ret
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/Print.cpp:270
+
+  do {
+    unsigned long m = n;
+    n /= base;
+    char c = m - base * n;
+    *--str = c < 10 ? c + '0' : c + 'A' - 10;
+ 5c6:	19 5c       	subi	r17, 0xC9	; 201
+ 5c8:	d8 cf       	rjmp	.-80     	; 0x57a <Print::printNumber(unsigned long, unsigned char) [clone .constprop.9]+0x56>
+
+000005ca <Print::print(char const*) [clone .constprop.13]>:
+_ZN5Print5printEPKc.constprop.13():
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/Print.h:81
+ 5ca:	4a e0       	ldi	r20, 0x0A	; 10
+ 5cc:	50 e0       	ldi	r21, 0x00	; 0
+ 5ce:	60 e7       	ldi	r22, 0x70	; 112
+ 5d0:	70 e0       	ldi	r23, 0x00	; 0
+ 5d2:	8f eb       	ldi	r24, 0xBF	; 191
+ 5d4:	90 e0       	ldi	r25, 0x00	; 0
+ 5d6:	58 ce       	rjmp	.-848    	; 0x288 <Print::write(unsigned char const*, unsigned int)>
+
+000005d8 <__vector_6>:
+__vector_6():
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:308
+      #error "cannot find Millis() timer overflow vector"
+    #endif
+  #else
+    #error "Millis() timer not defined!"
+  #endif
+  {
+ 5d8:	1f 92       	push	r1
+ 5da:	0f 92       	push	r0
+ 5dc:	0f b6       	in	r0, 0x3f	; 63
+ 5de:	0f 92       	push	r0
+ 5e0:	11 24       	eor	r1, r1
+ 5e2:	2f 93       	push	r18
+ 5e4:	3f 93       	push	r19
+ 5e6:	8f 93       	push	r24
+ 5e8:	9f 93       	push	r25
+ 5ea:	af 93       	push	r26
+ 5ec:	bf 93       	push	r27
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:311
+    // copy these to local variables so they can be stored in registers
+    // (volatile variables must be read from memory on every access)
+    unsigned long m = millis_timer_millis;
+ 5ee:	80 91 8f 00 	lds	r24, 0x008F	; 0x80008f <millis_timer_millis>
+ 5f2:	90 91 90 00 	lds	r25, 0x0090	; 0x800090 <millis_timer_millis+0x1>
+ 5f6:	a0 91 91 00 	lds	r26, 0x0091	; 0x800091 <millis_timer_millis+0x2>
+ 5fa:	b0 91 92 00 	lds	r27, 0x0092	; 0x800092 <millis_timer_millis+0x3>
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:312
+    unsigned char f = millis_timer_fract;
+ 5fe:	30 91 8e 00 	lds	r19, 0x008E	; 0x80008e <millis_timer_fract>
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:319
+    static unsigned char correct_exact = 0;     // rollover intended
+    if (++correct_exact < CORRECT_EXACT_MANY) {
+      ++f;
+    }
+#endif
+    f += FRACT_INC;
+ 602:	26 e0       	ldi	r18, 0x06	; 6
+ 604:	23 0f       	add	r18, r19
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:321
+
+    if (f >= FRACT_MAX)
+ 606:	2d 37       	cpi	r18, 0x7D	; 125
+ 608:	68 f1       	brcs	.+90     	; 0x664 <__vector_6+0x8c>
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:323
+    {
+      f -= FRACT_MAX;
+ 60a:	29 e8       	ldi	r18, 0x89	; 137
+ 60c:	23 0f       	add	r18, r19
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:324
+      m += MILLIS_INC + 1;
+ 60e:	03 96       	adiw	r24, 0x03	; 3
+ 610:	a1 1d       	adc	r26, r1
+ 612:	b1 1d       	adc	r27, r1
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:331
+    else
+    {
+      m += MILLIS_INC;
+    }
+
+    millis_timer_fract = f;
+ 614:	20 93 8e 00 	sts	0x008E, r18	; 0x80008e <millis_timer_fract>
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:332
+    millis_timer_millis = m;
+ 618:	80 93 8f 00 	sts	0x008F, r24	; 0x80008f <millis_timer_millis>
+ 61c:	90 93 90 00 	sts	0x0090, r25	; 0x800090 <millis_timer_millis+0x1>
+ 620:	a0 93 91 00 	sts	0x0091, r26	; 0x800091 <millis_timer_millis+0x2>
+ 624:	b0 93 92 00 	sts	0x0092, r27	; 0x800092 <millis_timer_millis+0x3>
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:334
+#ifndef CORRECT_EXACT_MICROS
+    millis_timer_overflow_count++;
+ 628:	80 91 93 00 	lds	r24, 0x0093	; 0x800093 <millis_timer_overflow_count>
+ 62c:	90 91 94 00 	lds	r25, 0x0094	; 0x800094 <millis_timer_overflow_count+0x1>
+ 630:	a0 91 95 00 	lds	r26, 0x0095	; 0x800095 <millis_timer_overflow_count+0x2>
+ 634:	b0 91 96 00 	lds	r27, 0x0096	; 0x800096 <millis_timer_overflow_count+0x3>
+ 638:	01 96       	adiw	r24, 0x01	; 1
+ 63a:	a1 1d       	adc	r26, r1
+ 63c:	b1 1d       	adc	r27, r1
+ 63e:	80 93 93 00 	sts	0x0093, r24	; 0x800093 <millis_timer_overflow_count>
+ 642:	90 93 94 00 	sts	0x0094, r25	; 0x800094 <millis_timer_overflow_count+0x1>
+ 646:	a0 93 95 00 	sts	0x0095, r26	; 0x800095 <millis_timer_overflow_count+0x2>
+ 64a:	b0 93 96 00 	sts	0x0096, r27	; 0x800096 <millis_timer_overflow_count+0x3>
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:336
+#endif
+  }
+ 64e:	bf 91       	pop	r27
+ 650:	af 91       	pop	r26
+ 652:	9f 91       	pop	r25
+ 654:	8f 91       	pop	r24
+ 656:	3f 91       	pop	r19
+ 658:	2f 91       	pop	r18
+ 65a:	0f 90       	pop	r0
+ 65c:	0f be       	out	0x3f, r0	; 63
+ 65e:	0f 90       	pop	r0
+ 660:	1f 90       	pop	r1
+ 662:	18 95       	reti
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:328
+      f -= FRACT_MAX;
+      m += MILLIS_INC + 1;
+    }
+    else
+    {
+      m += MILLIS_INC;
+ 664:	02 96       	adiw	r24, 0x02	; 2
+ 666:	a1 1d       	adc	r26, r1
+ 668:	b1 1d       	adc	r27, r1
+ 66a:	d4 cf       	rjmp	.-88     	; 0x614 <__vector_6+0x3c>
+
+0000066c <__vector_2>:
+__vector_2():
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/WInterrupts.c:147
+}
+#endif
+
+#if NUMBER_EXTERNAL_INTERRUPTS >= 2
+ISR(EXTERNAL_INTERRUPT_1_vect)
+{
+ 66c:	1f 92       	push	r1
+ 66e:	0f 92       	push	r0
+ 670:	0f b6       	in	r0, 0x3f	; 63
+ 672:	0f 92       	push	r0
+ 674:	11 24       	eor	r1, r1
+ 676:	2f 93       	push	r18
+ 678:	3f 93       	push	r19
+ 67a:	4f 93       	push	r20
+ 67c:	5f 93       	push	r21
+ 67e:	6f 93       	push	r22
+ 680:	7f 93       	push	r23
+ 682:	8f 93       	push	r24
+ 684:	9f 93       	push	r25
+ 686:	af 93       	push	r26
+ 688:	bf 93       	push	r27
+ 68a:	ef 93       	push	r30
+ 68c:	ff 93       	push	r31
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/WInterrupts.c:148
+  if(intFunc[EXTERNAL_INTERRUPT_1])
+ 68e:	80 91 99 00 	lds	r24, 0x0099	; 0x800099 <intFunc+0x2>
+ 692:	90 91 9a 00 	lds	r25, 0x009A	; 0x80009a <intFunc+0x3>
+ 696:	89 2b       	or	r24, r25
+ 698:	29 f0       	breq	.+10     	; 0x6a4 <__vector_2+0x38>
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/WInterrupts.c:149
+    intFunc[EXTERNAL_INTERRUPT_1]();
+ 69a:	e0 91 99 00 	lds	r30, 0x0099	; 0x800099 <intFunc+0x2>
+ 69e:	f0 91 9a 00 	lds	r31, 0x009A	; 0x80009a <intFunc+0x3>
+ 6a2:	09 95       	icall
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/WInterrupts.c:150
+}
+ 6a4:	ff 91       	pop	r31
+ 6a6:	ef 91       	pop	r30
+ 6a8:	bf 91       	pop	r27
+ 6aa:	af 91       	pop	r26
+ 6ac:	9f 91       	pop	r25
+ 6ae:	8f 91       	pop	r24
+ 6b0:	7f 91       	pop	r23
+ 6b2:	6f 91       	pop	r22
+ 6b4:	5f 91       	pop	r21
+ 6b6:	4f 91       	pop	r20
+ 6b8:	3f 91       	pop	r19
+ 6ba:	2f 91       	pop	r18
+ 6bc:	0f 90       	pop	r0
+ 6be:	0f be       	out	0x3f, r0	; 63
+ 6c0:	0f 90       	pop	r0
+ 6c2:	1f 90       	pop	r1
+ 6c4:	18 95       	reti
+
+000006c6 <__vector_1>:
+__vector_1():
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/WInterrupts.c:139
+  }
+}
+
+#if NUMBER_EXTERNAL_INTERRUPTS >= 1
+ISR(EXTERNAL_INTERRUPT_0_vect)
+{
+ 6c6:	1f 92       	push	r1
+ 6c8:	0f 92       	push	r0
+ 6ca:	0f b6       	in	r0, 0x3f	; 63
+ 6cc:	0f 92       	push	r0
+ 6ce:	11 24       	eor	r1, r1
+ 6d0:	2f 93       	push	r18
+ 6d2:	3f 93       	push	r19
+ 6d4:	4f 93       	push	r20
+ 6d6:	5f 93       	push	r21
+ 6d8:	6f 93       	push	r22
+ 6da:	7f 93       	push	r23
+ 6dc:	8f 93       	push	r24
+ 6de:	9f 93       	push	r25
+ 6e0:	af 93       	push	r26
+ 6e2:	bf 93       	push	r27
+ 6e4:	ef 93       	push	r30
+ 6e6:	ff 93       	push	r31
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/WInterrupts.c:140
+  if(intFunc[EXTERNAL_INTERRUPT_0])
+ 6e8:	80 91 97 00 	lds	r24, 0x0097	; 0x800097 <intFunc>
+ 6ec:	90 91 98 00 	lds	r25, 0x0098	; 0x800098 <intFunc+0x1>
+ 6f0:	89 2b       	or	r24, r25
+ 6f2:	29 f0       	breq	.+10     	; 0x6fe <__vector_1+0x38>
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/WInterrupts.c:141
+    intFunc[EXTERNAL_INTERRUPT_0]();
+ 6f4:	e0 91 97 00 	lds	r30, 0x0097	; 0x800097 <intFunc>
+ 6f8:	f0 91 98 00 	lds	r31, 0x0098	; 0x800098 <intFunc+0x1>
+ 6fc:	09 95       	icall
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/WInterrupts.c:142
+}
+ 6fe:	ff 91       	pop	r31
+ 700:	ef 91       	pop	r30
+ 702:	bf 91       	pop	r27
+ 704:	af 91       	pop	r26
+ 706:	9f 91       	pop	r25
+ 708:	8f 91       	pop	r24
+ 70a:	7f 91       	pop	r23
+ 70c:	6f 91       	pop	r22
+ 70e:	5f 91       	pop	r21
+ 710:	4f 91       	pop	r20
+ 712:	3f 91       	pop	r19
+ 714:	2f 91       	pop	r18
+ 716:	0f 90       	pop	r0
+ 718:	0f be       	out	0x3f, r0	; 63
+ 71a:	0f 90       	pop	r0
+ 71c:	1f 90       	pop	r1
+ 71e:	18 95       	reti
+
+00000720 <__vector_8>:
+__vector_8():
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:182
+ISR(USART0_UDRE_vect)
+#elif defined(USART_UDRE_vect)
+ISR(USART_UDRE_vect)
+#endif
+#if !defined(LIN_TC_vect)
+{
+ 720:	1f 92       	push	r1
+ 722:	0f 92       	push	r0
+ 724:	0f b6       	in	r0, 0x3f	; 63
+ 726:	0f 92       	push	r0
+ 728:	11 24       	eor	r1, r1
+ 72a:	2f 93       	push	r18
+ 72c:	8f 93       	push	r24
+ 72e:	9f 93       	push	r25
+ 730:	ef 93       	push	r30
+ 732:	ff 93       	push	r31
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:183
+  if (tx_buffer.head == tx_buffer.tail) {
+ 734:	80 91 ac 00 	lds	r24, 0x00AC	; 0x8000ac <tx_buffer+0x11>
+ 738:	90 91 ab 00 	lds	r25, 0x00AB	; 0x8000ab <tx_buffer+0x10>
+ 73c:	98 13       	cpse	r25, r24
+ 73e:	0b c0       	rjmp	.+22     	; 0x756 <__vector_8+0x36>
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:188
+  // Buffer empty, so disable interrupts
+#if defined(UCSR0B)
+    cbi(UCSR0B, UDRIE0);
+#else
+    cbi(UCSRB, UDRIE);
+ 740:	55 98       	cbi	0x0a, 5	; 10
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:203
+    UDR0 = c;
+  #else
+    #error UDR not defined
+  #endif
+  }
+}
+ 742:	ff 91       	pop	r31
+ 744:	ef 91       	pop	r30
+ 746:	9f 91       	pop	r25
+ 748:	8f 91       	pop	r24
+ 74a:	2f 91       	pop	r18
+ 74c:	0f 90       	pop	r0
+ 74e:	0f be       	out	0x3f, r0	; 63
+ 750:	0f 90       	pop	r0
+ 752:	1f 90       	pop	r1
+ 754:	18 95       	reti
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:192
+#else
+    cbi(UCSRB, UDRIE);
+#endif
+  } else {
+    // There is more data in the output buffer. Send the next byte
+    unsigned char c = tx_buffer.buffer[tx_buffer.tail];
+ 756:	90 e0       	ldi	r25, 0x00	; 0
+ 758:	fc 01       	movw	r30, r24
+ 75a:	e5 56       	subi	r30, 0x65	; 101
+ 75c:	ff 4f       	sbci	r31, 0xFF	; 255
+ 75e:	20 81       	ld	r18, Z
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:193
+    tx_buffer.tail = (tx_buffer.tail + 1) % SERIAL_BUFFER_SIZE;
+ 760:	01 96       	adiw	r24, 0x01	; 1
+ 762:	8f 70       	andi	r24, 0x0F	; 15
+ 764:	99 27       	eor	r25, r25
+ 766:	80 93 ac 00 	sts	0x00AC, r24	; 0x8000ac <tx_buffer+0x11>
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:196
+
+  #if defined(UDR)
+    UDR = c;
+ 76a:	2c b9       	out	0x0c, r18	; 12
+ 76c:	ea cf       	rjmp	.-44     	; 0x742 <__vector_8+0x22>
+
+0000076e <__vector_7>:
+__vector_7():
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:80
+  }
+}
+
+#if defined(USART_RX_vect)
+  ISR(USART_RX_vect)
+  {
+ 76e:	1f 92       	push	r1
+ 770:	0f 92       	push	r0
+ 772:	0f b6       	in	r0, 0x3f	; 63
+ 774:	0f 92       	push	r0
+ 776:	11 24       	eor	r1, r1
+ 778:	2f 93       	push	r18
+ 77a:	3f 93       	push	r19
+ 77c:	4f 93       	push	r20
+ 77e:	5f 93       	push	r21
+ 780:	8f 93       	push	r24
+ 782:	9f 93       	push	r25
+ 784:	ef 93       	push	r30
+ 786:	ff 93       	push	r31
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:82
+  #if defined(UDR)
+    unsigned char c  =  UDR;
+ 788:	4c b1       	in	r20, 0x0c	; 12
+store_char():
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:66
+  ring_buffer tx_buffer1  =  { { 0 }, 0, 0 };
+#endif
+
+inline void store_char(unsigned char c, ring_buffer *buffer)
+{
+  byte i = (buffer->head + 1) % SERIAL_BUFFER_SIZE;
+ 78a:	80 91 bd 00 	lds	r24, 0x00BD	; 0x8000bd <rx_buffer+0x10>
+ 78e:	90 e0       	ldi	r25, 0x00	; 0
+ 790:	9c 01       	movw	r18, r24
+ 792:	2f 5f       	subi	r18, 0xFF	; 255
+ 794:	3f 4f       	sbci	r19, 0xFF	; 255
+ 796:	2f 70       	andi	r18, 0x0F	; 15
+ 798:	33 27       	eor	r19, r19
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:72
+
+  // if we should be storing the received character into the location
+  // just before the tail (meaning that the head would advance to the
+  // current location of the tail), we're about to overflow the buffer
+  // and so we don't write the character or advance the head.
+  if (i != buffer->tail) {
+ 79a:	50 91 be 00 	lds	r21, 0x00BE	; 0x8000be <rx_buffer+0x11>
+ 79e:	52 17       	cp	r21, r18
+ 7a0:	31 f0       	breq	.+12     	; 0x7ae <__vector_7+0x40>
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:73
+    buffer->buffer[buffer->head] = c;
+ 7a2:	83 55       	subi	r24, 0x53	; 83
+ 7a4:	9f 4f       	sbci	r25, 0xFF	; 255
+ 7a6:	fc 01       	movw	r30, r24
+ 7a8:	40 83       	st	Z, r20
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:74
+    buffer->head = i;
+ 7aa:	20 93 bd 00 	sts	0x00BD, r18	; 0x8000bd <rx_buffer+0x10>
+__vector_7():
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:89
+    unsigned char c  =  UDR0;  //  atmega8535
+  #else
+    #error UDR not defined
+  #endif
+    store_char(c, &rx_buffer);
+  }
+ 7ae:	ff 91       	pop	r31
+ 7b0:	ef 91       	pop	r30
+ 7b2:	9f 91       	pop	r25
+ 7b4:	8f 91       	pop	r24
+ 7b6:	5f 91       	pop	r21
+ 7b8:	4f 91       	pop	r20
+ 7ba:	3f 91       	pop	r19
+ 7bc:	2f 91       	pop	r18
+ 7be:	0f 90       	pop	r0
+ 7c0:	0f be       	out	0x3f, r0	; 63
+ 7c2:	0f 90       	pop	r0
+ 7c4:	1f 90       	pop	r1
+ 7c6:	18 95       	reti
+
+000007c8 <global constructors keyed to 65535_0_RFID_Reader_DERE.ino.cpp.o.1938>:
+_GLOBAL__I_65535_0_RFID_Reader_DERE.ino.cpp.o.1938():
+ 7c8:	ef eb       	ldi	r30, 0xBF	; 191
+ 7ca:	f0 e0       	ldi	r31, 0x00	; 0
+ 7cc:	13 82       	std	Z+3, r1	; 0x03
+ 7ce:	12 82       	std	Z+2, r1	; 0x02
+ 7d0:	88 ee       	ldi	r24, 0xE8	; 232
+ 7d2:	93 e0       	ldi	r25, 0x03	; 3
+ 7d4:	a0 e0       	ldi	r26, 0x00	; 0
+ 7d6:	b0 e0       	ldi	r27, 0x00	; 0
+ 7d8:	84 83       	std	Z+4, r24	; 0x04
+ 7da:	95 83       	std	Z+5, r25	; 0x05
+ 7dc:	a6 83       	std	Z+6, r26	; 0x06
+ 7de:	b7 83       	std	Z+7, r27	; 0x07
+ 7e0:	84 e6       	ldi	r24, 0x64	; 100
+ 7e2:	90 e0       	ldi	r25, 0x00	; 0
+ 7e4:	91 83       	std	Z+1, r25	; 0x01
+ 7e6:	80 83       	st	Z, r24
+ 7e8:	8d ea       	ldi	r24, 0xAD	; 173
+ 7ea:	90 e0       	ldi	r25, 0x00	; 0
+ 7ec:	95 87       	std	Z+13, r25	; 0x0d
+ 7ee:	84 87       	std	Z+12, r24	; 0x0c
+ 7f0:	8b e9       	ldi	r24, 0x9B	; 155
+ 7f2:	90 e0       	ldi	r25, 0x00	; 0
+ 7f4:	97 87       	std	Z+15, r25	; 0x0f
+ 7f6:	86 87       	std	Z+14, r24	; 0x0e
+ 7f8:	82 e2       	ldi	r24, 0x22	; 34
+ 7fa:	90 e0       	ldi	r25, 0x00	; 0
+ 7fc:	91 8b       	std	Z+17, r25	; 0x11
+ 7fe:	80 8b       	std	Z+16, r24	; 0x10
+ 800:	89 e2       	ldi	r24, 0x29	; 41
+ 802:	90 e0       	ldi	r25, 0x00	; 0
+ 804:	93 8b       	std	Z+19, r25	; 0x13
+ 806:	82 8b       	std	Z+18, r24	; 0x12
+ 808:	8b e2       	ldi	r24, 0x2B	; 43
+ 80a:	90 e0       	ldi	r25, 0x00	; 0
+ 80c:	95 8b       	std	Z+21, r25	; 0x15
+ 80e:	84 8b       	std	Z+20, r24	; 0x14
+ 810:	8a e2       	ldi	r24, 0x2A	; 42
+ 812:	90 e0       	ldi	r25, 0x00	; 0
+ 814:	97 8b       	std	Z+23, r25	; 0x17
+ 816:	86 8b       	std	Z+22, r24	; 0x16
+ 818:	8c e2       	ldi	r24, 0x2C	; 44
+ 81a:	90 e0       	ldi	r25, 0x00	; 0
+ 81c:	91 8f       	std	Z+25, r25	; 0x19
+ 81e:	80 8f       	std	Z+24, r24	; 0x18
+ 820:	84 e0       	ldi	r24, 0x04	; 4
+ 822:	82 8f       	std	Z+26, r24	; 0x1a
+ 824:	83 e0       	ldi	r24, 0x03	; 3
+ 826:	83 8f       	std	Z+27, r24	; 0x1b
+ 828:	87 e0       	ldi	r24, 0x07	; 7
+ 82a:	84 8f       	std	Z+28, r24	; 0x1c
+ 82c:	85 e0       	ldi	r24, 0x05	; 5
+ 82e:	85 8f       	std	Z+29, r24	; 0x1d
+ 830:	81 e0       	ldi	r24, 0x01	; 1
+ 832:	86 8f       	std	Z+30, r24	; 0x1e
+ 834:	08 95       	ret
+
+00000836 <main>:
+main():
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:1138
+*/
+
+  // Use the Millis Timer for fast PWM (unless it doesn't have an output).
+  #if (TIMER_TO_USE_FOR_MILLIS == 0)
+    #if defined(WGM01) // if Timer0 has PWM
+      TCCR0A = (1<<WGM01) | (1<<WGM00);
+ 836:	83 e0       	ldi	r24, 0x03	; 3
+ 838:	80 bf       	out	0x30, r24	; 48
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:1141
+    #endif
+    #if defined(TCCR0B) //The x61 has a wacky Timer0!
+      TCCR0B = (MillisTimer_Prescale_Index << CS00);
+ 83a:	83 bf       	out	0x33, r24	; 51
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:1162
+    TCCR1A = 1<<WGM10;
+    TCCR1B = (1<<WGM12) | (MillisTimer_Prescale_Index << CS10);
+  #endif
+
+  // this needs to be called before setup() or some functions won't work there
+  sei();
+ 83c:	78 94       	sei
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:1167
+
+  #ifndef DISABLEMILLIS
+    // Enable the overflow interrupt (this is the basic system tic-toc for millis)
+    #if defined(TIMSK) && defined(TOIE0) && (TIMER_TO_USE_FOR_MILLIS == 0)
+      sbi(TIMSK, TOIE0);
+ 83e:	89 b7       	in	r24, 0x39	; 57
+ 840:	82 60       	ori	r24, 0x02	; 2
+ 842:	89 bf       	out	0x39, r24	; 57
+begin():
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:276
+#endif
+*/
+try_again:
+
+  if (use_u2x) {
+    *_ucsra = 1 << _u2x;
+ 844:	e0 91 d3 00 	lds	r30, 0x00D3	; 0x8000d3 <Serial+0x14>
+ 848:	f0 91 d4 00 	lds	r31, 0x00D4	; 0x8000d4 <Serial+0x15>
+ 84c:	20 91 dd 00 	lds	r18, 0x00DD	; 0x8000dd <Serial+0x1e>
+ 850:	81 e0       	ldi	r24, 0x01	; 1
+ 852:	90 e0       	ldi	r25, 0x00	; 0
+ 854:	ac 01       	movw	r20, r24
+ 856:	02 c0       	rjmp	.+4      	; 0x85c <main+0x26>
+ 858:	44 0f       	add	r20, r20
+ 85a:	55 1f       	adc	r21, r21
+ 85c:	2a 95       	dec	r18
+ 85e:	e2 f7       	brpl	.-8      	; 0x858 <main+0x22>
+ 860:	40 83       	st	Z, r20
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:290
+    use_u2x = false;
+    goto try_again;
+  }
+
+  // assign the baud_setting, a.k.a. ubbr (USART Baud Rate Register)
+  *_ubrrh = baud_setting >> 8;
+ 862:	e0 91 cf 00 	lds	r30, 0x00CF	; 0x8000cf <Serial+0x10>
+ 866:	f0 91 d0 00 	lds	r31, 0x00D0	; 0x8000d0 <Serial+0x11>
+ 86a:	10 82       	st	Z, r1
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:291
+  *_ubrrl = baud_setting;
+ 86c:	e0 91 d1 00 	lds	r30, 0x00D1	; 0x8000d1 <Serial+0x12>
+ 870:	f0 91 d2 00 	lds	r31, 0x00D2	; 0x8000d2 <Serial+0x13>
+ 874:	2f ec       	ldi	r18, 0xCF	; 207
+ 876:	20 83       	st	Z, r18
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:293
+
+  sbi(*_ucsrb, _rxen);
+ 878:	e0 91 d5 00 	lds	r30, 0x00D5	; 0x8000d5 <Serial+0x16>
+ 87c:	f0 91 d6 00 	lds	r31, 0x00D6	; 0x8000d6 <Serial+0x17>
+ 880:	20 81       	ld	r18, Z
+ 882:	30 91 d9 00 	lds	r19, 0x00D9	; 0x8000d9 <Serial+0x1a>
+ 886:	ac 01       	movw	r20, r24
+ 888:	01 c0       	rjmp	.+2      	; 0x88c <main+0x56>
+ 88a:	44 0f       	add	r20, r20
+ 88c:	3a 95       	dec	r19
+ 88e:	ea f7       	brpl	.-6      	; 0x88a <main+0x54>
+ 890:	24 2b       	or	r18, r20
+ 892:	20 83       	st	Z, r18
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:294
+  sbi(*_ucsrb, _txen);
+ 894:	e0 91 d5 00 	lds	r30, 0x00D5	; 0x8000d5 <Serial+0x16>
+ 898:	f0 91 d6 00 	lds	r31, 0x00D6	; 0x8000d6 <Serial+0x17>
+ 89c:	20 81       	ld	r18, Z
+ 89e:	30 91 da 00 	lds	r19, 0x00DA	; 0x8000da <Serial+0x1b>
+ 8a2:	ac 01       	movw	r20, r24
+ 8a4:	01 c0       	rjmp	.+2      	; 0x8a8 <main+0x72>
+ 8a6:	44 0f       	add	r20, r20
+ 8a8:	3a 95       	dec	r19
+ 8aa:	ea f7       	brpl	.-6      	; 0x8a6 <main+0x70>
+ 8ac:	24 2b       	or	r18, r20
+ 8ae:	20 83       	st	Z, r18
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:295
+  sbi(*_ucsrb, _rxcie);
+ 8b0:	e0 91 d5 00 	lds	r30, 0x00D5	; 0x8000d5 <Serial+0x16>
+ 8b4:	f0 91 d6 00 	lds	r31, 0x00D6	; 0x8000d6 <Serial+0x17>
+ 8b8:	20 81       	ld	r18, Z
+ 8ba:	30 91 db 00 	lds	r19, 0x00DB	; 0x8000db <Serial+0x1c>
+ 8be:	ac 01       	movw	r20, r24
+ 8c0:	01 c0       	rjmp	.+2      	; 0x8c4 <main+0x8e>
+ 8c2:	44 0f       	add	r20, r20
+ 8c4:	3a 95       	dec	r19
+ 8c6:	ea f7       	brpl	.-6      	; 0x8c2 <main+0x8c>
+ 8c8:	24 2b       	or	r18, r20
+ 8ca:	20 83       	st	Z, r18
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/HardwareSerial.cpp:296
+  cbi(*_ucsrb, _udrie);
+ 8cc:	e0 91 d5 00 	lds	r30, 0x00D5	; 0x8000d5 <Serial+0x16>
+ 8d0:	f0 91 d6 00 	lds	r31, 0x00D6	; 0x8000d6 <Serial+0x17>
+ 8d4:	20 81       	ld	r18, Z
+ 8d6:	30 91 dc 00 	lds	r19, 0x00DC	; 0x8000dc <Serial+0x1d>
+ 8da:	01 c0       	rjmp	.+2      	; 0x8de <main+0xa8>
+ 8dc:	88 0f       	add	r24, r24
+ 8de:	3a 95       	dec	r19
+ 8e0:	ea f7       	brpl	.-6      	; 0x8dc <main+0xa6>
+ 8e2:	80 95       	com	r24
+ 8e4:	82 23       	and	r24, r18
+ 8e6:	80 83       	st	Z, r24
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:48
+	begin(2,3);
+}
+
+void WIEGAND::begin(int pinD0, int pinD1)
+{
+	_lastWiegand = 0;
+ 8e8:	10 92 86 00 	sts	0x0086, r1	; 0x800086 <WIEGAND::_lastWiegand>
+ 8ec:	10 92 87 00 	sts	0x0087, r1	; 0x800087 <WIEGAND::_lastWiegand+0x1>
+ 8f0:	10 92 88 00 	sts	0x0088, r1	; 0x800088 <WIEGAND::_lastWiegand+0x2>
+ 8f4:	10 92 89 00 	sts	0x0089, r1	; 0x800089 <WIEGAND::_lastWiegand+0x3>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:49
+	_cardTempHigh = 0;
+ 8f8:	10 92 7c 00 	sts	0x007C, r1	; 0x80007c <__data_end>
+ 8fc:	10 92 7d 00 	sts	0x007D, r1	; 0x80007d <__data_end+0x1>
+ 900:	10 92 7e 00 	sts	0x007E, r1	; 0x80007e <__data_end+0x2>
+ 904:	10 92 7f 00 	sts	0x007F, r1	; 0x80007f <__data_end+0x3>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:50
+	_cardTemp = 0;
+ 908:	10 92 80 00 	sts	0x0080, r1	; 0x800080 <WIEGAND::_cardTemp>
+ 90c:	10 92 81 00 	sts	0x0081, r1	; 0x800081 <WIEGAND::_cardTemp+0x1>
+ 910:	10 92 82 00 	sts	0x0082, r1	; 0x800082 <WIEGAND::_cardTemp+0x2>
+ 914:	10 92 83 00 	sts	0x0083, r1	; 0x800083 <WIEGAND::_cardTemp+0x3>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:51
+	_code = 0;
+ 918:	10 92 8a 00 	sts	0x008A, r1	; 0x80008a <WIEGAND::_code>
+ 91c:	10 92 8b 00 	sts	0x008B, r1	; 0x80008b <WIEGAND::_code+0x1>
+ 920:	10 92 8c 00 	sts	0x008C, r1	; 0x80008c <WIEGAND::_code+0x2>
+ 924:	10 92 8d 00 	sts	0x008D, r1	; 0x80008d <WIEGAND::_code+0x3>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:53
+	_wiegandType = 0;
+	_bitCount = 0;  
+ 928:	10 92 85 00 	sts	0x0085, r1	; 0x800085 <WIEGAND::_bitCount+0x1>
+ 92c:	10 92 84 00 	sts	0x0084, r1	; 0x800084 <WIEGAND::_bitCount>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:54
+	pinMode(pinD0, INPUT);					// Set D0 pin as input
+ 930:	60 e0       	ldi	r22, 0x00	; 0
+ 932:	84 e0       	ldi	r24, 0x04	; 4
+ 934:	c4 dd       	rcall	.-1144   	; 0x4be <pinMode>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:55
+	pinMode(pinD1, INPUT);					// Set D1 pin as input
+ 936:	60 e0       	ldi	r22, 0x00	; 0
+ 938:	85 e0       	ldi	r24, 0x05	; 5
+ 93a:	c1 dd       	rcall	.-1150   	; 0x4be <pinMode>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:57
+	
+	attachInterrupt(digitalPinToInterrupt(pinD0), ReadD0, FALLING);  // Hardware interrupt - high to low pulse
+ 93c:	66 ed       	ldi	r22, 0xD6	; 214
+ 93e:	71 e0       	ldi	r23, 0x01	; 1
+ 940:	80 e0       	ldi	r24, 0x00	; 0
+ 942:	b6 db       	rcall	.-2196   	; 0xb0 <attachInterrupt.constprop.18>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:58
+	attachInterrupt(digitalPinToInterrupt(pinD1), ReadD1, FALLING);  // Hardware interrupt - high to low pulse
+ 944:	66 ec       	ldi	r22, 0xC6	; 198
+ 946:	70 e0       	ldi	r23, 0x00	; 0
+ 948:	81 e0       	ldi	r24, 0x01	; 1
+ 94a:	b2 db       	rcall	.-2204   	; 0xb0 <attachInterrupt.constprop.18>
+setup():
+C:\Users\kedai\Desktop\RFID_Reader_DERE/RFID_Reader_DERE.ino:9
+#define pin_DE_RE 13
+
+void setup() {
+  Serial.begin(4800);  
+  wg.begin(4,5);
+  pinMode(pin_DE_RE, OUTPUT);
+ 94c:	61 e0       	ldi	r22, 0x01	; 1
+ 94e:	8d e0       	ldi	r24, 0x0D	; 13
+ 950:	b6 dd       	rcall	.-1172   	; 0x4be <pinMode>
+available():
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:35
+}
+
+bool WIEGAND::available()
+{
+	bool ret;
+	noInterrupts();
+ 952:	f8 94       	cli
+millis():
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:341
+  }
+
+  unsigned long millis()
+  {
+    unsigned long m;
+    uint8_t oldSREG = SREG;
+ 954:	8f b7       	in	r24, 0x3f	; 63
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:345
+
+    // disable interrupts while we read millis_timer_millis or we might get an
+    // inconsistent value (e.g. in the middle of a write to millis_timer_millis)
+    cli();
+ 956:	f8 94       	cli
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:346
+    m = millis_timer_millis;
+ 958:	00 91 8f 00 	lds	r16, 0x008F	; 0x80008f <millis_timer_millis>
+ 95c:	10 91 90 00 	lds	r17, 0x0090	; 0x800090 <millis_timer_millis+0x1>
+ 960:	20 91 91 00 	lds	r18, 0x0091	; 0x800091 <millis_timer_millis+0x2>
+ 964:	30 91 92 00 	lds	r19, 0x0092	; 0x800092 <millis_timer_millis+0x3>
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/wiring.c:347
+    SREG = oldSREG;
+ 968:	8f bf       	out	0x3f, r24	; 63
+DoWiegandConversion():
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:136
+bool WIEGAND::DoWiegandConversion ()
+{
+	unsigned long cardID;
+	unsigned long sysTick = millis();
+	
+	if ((sysTick - _lastWiegand) > 25)								// if no more signal coming through after 25ms
+ 96a:	80 91 86 00 	lds	r24, 0x0086	; 0x800086 <WIEGAND::_lastWiegand>
+ 96e:	90 91 87 00 	lds	r25, 0x0087	; 0x800087 <WIEGAND::_lastWiegand+0x1>
+ 972:	a0 91 88 00 	lds	r26, 0x0088	; 0x800088 <WIEGAND::_lastWiegand+0x2>
+ 976:	b0 91 89 00 	lds	r27, 0x0089	; 0x800089 <WIEGAND::_lastWiegand+0x3>
+ 97a:	b9 01       	movw	r22, r18
+ 97c:	a8 01       	movw	r20, r16
+ 97e:	48 1b       	sub	r20, r24
+ 980:	59 0b       	sbc	r21, r25
+ 982:	6a 0b       	sbc	r22, r26
+ 984:	7b 0b       	sbc	r23, r27
+ 986:	db 01       	movw	r26, r22
+ 988:	ca 01       	movw	r24, r20
+ 98a:	4a 97       	sbiw	r24, 0x1a	; 26
+ 98c:	a1 05       	cpc	r26, r1
+ 98e:	b1 05       	cpc	r27, r1
+ 990:	10 f4       	brcc	.+4      	; 0x996 <main+0x160>
+available():
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:37
+bool WIEGAND::available()
+{
+	bool ret;
+	noInterrupts();
+	ret=DoWiegandConversion();
+	interrupts();
+ 992:	78 94       	sei
+ 994:	de cf       	rjmp	.-68     	; 0x952 <main+0x11c>
+DoWiegandConversion():
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:138
+	unsigned long cardID;
+	unsigned long sysTick = millis();
+	
+	if ((sysTick - _lastWiegand) > 25)								// if no more signal coming through after 25ms
+	{
+		if ((_bitCount==24) || (_bitCount==26) || (_bitCount==32) || (_bitCount==34) || (_bitCount==8) || (_bitCount==4)) 	// bitCount for keypress=4 or 8, Wiegand 26=24 or 26, Wiegand 34=32 or 34
+ 996:	80 91 84 00 	lds	r24, 0x0084	; 0x800084 <WIEGAND::_bitCount>
+ 99a:	90 91 85 00 	lds	r25, 0x0085	; 0x800085 <WIEGAND::_bitCount+0x1>
+ 99e:	48 97       	sbiw	r24, 0x18	; 24
+ 9a0:	d9 f1       	breq	.+118    	; 0xa18 <main+0x1e2>
+ 9a2:	80 91 84 00 	lds	r24, 0x0084	; 0x800084 <WIEGAND::_bitCount>
+ 9a6:	90 91 85 00 	lds	r25, 0x0085	; 0x800085 <WIEGAND::_bitCount+0x1>
+ 9aa:	4a 97       	sbiw	r24, 0x1a	; 26
+ 9ac:	a9 f1       	breq	.+106    	; 0xa18 <main+0x1e2>
+ 9ae:	80 91 84 00 	lds	r24, 0x0084	; 0x800084 <WIEGAND::_bitCount>
+ 9b2:	90 91 85 00 	lds	r25, 0x0085	; 0x800085 <WIEGAND::_bitCount+0x1>
+ 9b6:	80 97       	sbiw	r24, 0x20	; 32
+ 9b8:	79 f1       	breq	.+94     	; 0xa18 <main+0x1e2>
+ 9ba:	80 91 84 00 	lds	r24, 0x0084	; 0x800084 <WIEGAND::_bitCount>
+ 9be:	90 91 85 00 	lds	r25, 0x0085	; 0x800085 <WIEGAND::_bitCount+0x1>
+ 9c2:	82 97       	sbiw	r24, 0x22	; 34
+ 9c4:	49 f1       	breq	.+82     	; 0xa18 <main+0x1e2>
+ 9c6:	80 91 84 00 	lds	r24, 0x0084	; 0x800084 <WIEGAND::_bitCount>
+ 9ca:	90 91 85 00 	lds	r25, 0x0085	; 0x800085 <WIEGAND::_bitCount+0x1>
+ 9ce:	08 97       	sbiw	r24, 0x08	; 8
+ 9d0:	19 f1       	breq	.+70     	; 0xa18 <main+0x1e2>
+ 9d2:	80 91 84 00 	lds	r24, 0x0084	; 0x800084 <WIEGAND::_bitCount>
+ 9d6:	90 91 85 00 	lds	r25, 0x0085	; 0x800085 <WIEGAND::_bitCount+0x1>
+ 9da:	04 97       	sbiw	r24, 0x04	; 4
+ 9dc:	e9 f0       	breq	.+58     	; 0xa18 <main+0x1e2>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:161
+				{
+					_code = (int)translateEnterEscapeKeyPress(lowNibble);
+					return true;
+				}
+				else {
+					_lastWiegand=sysTick;
+ 9de:	00 93 86 00 	sts	0x0086, r16	; 0x800086 <WIEGAND::_lastWiegand>
+ 9e2:	10 93 87 00 	sts	0x0087, r17	; 0x800087 <WIEGAND::_lastWiegand+0x1>
+ 9e6:	20 93 88 00 	sts	0x0088, r18	; 0x800088 <WIEGAND::_lastWiegand+0x2>
+ 9ea:	30 93 89 00 	sts	0x0089, r19	; 0x800089 <WIEGAND::_lastWiegand+0x3>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:162
+					_bitCount=0;
+ 9ee:	10 92 85 00 	sts	0x0085, r1	; 0x800085 <WIEGAND::_bitCount+0x1>
+ 9f2:	10 92 84 00 	sts	0x0084, r1	; 0x800084 <WIEGAND::_bitCount>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:163
+					_cardTemp=0;
+ 9f6:	10 92 80 00 	sts	0x0080, r1	; 0x800080 <WIEGAND::_cardTemp>
+ 9fa:	10 92 81 00 	sts	0x0081, r1	; 0x800081 <WIEGAND::_cardTemp+0x1>
+ 9fe:	10 92 82 00 	sts	0x0082, r1	; 0x800082 <WIEGAND::_cardTemp+0x2>
+ a02:	10 92 83 00 	sts	0x0083, r1	; 0x800083 <WIEGAND::_cardTemp+0x3>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:164
+					_cardTempHigh=0;
+ a06:	10 92 7c 00 	sts	0x007C, r1	; 0x80007c <__data_end>
+ a0a:	10 92 7d 00 	sts	0x007D, r1	; 0x80007d <__data_end+0x1>
+ a0e:	10 92 7e 00 	sts	0x007E, r1	; 0x80007e <__data_end+0x2>
+ a12:	10 92 7f 00 	sts	0x007F, r1	; 0x80007f <__data_end+0x3>
+ a16:	bd cf       	rjmp	.-134    	; 0x992 <main+0x15c>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:140
+	
+	if ((sysTick - _lastWiegand) > 25)								// if no more signal coming through after 25ms
+	{
+		if ((_bitCount==24) || (_bitCount==26) || (_bitCount==32) || (_bitCount==34) || (_bitCount==8) || (_bitCount==4)) 	// bitCount for keypress=4 or 8, Wiegand 26=24 or 26, Wiegand 34=32 or 34
+		{
+			_cardTemp >>= 1;			// shift right 1 bit to get back the real value - interrupt done 1 left shift in advance
+ a18:	80 91 80 00 	lds	r24, 0x0080	; 0x800080 <WIEGAND::_cardTemp>
+ a1c:	90 91 81 00 	lds	r25, 0x0081	; 0x800081 <WIEGAND::_cardTemp+0x1>
+ a20:	a0 91 82 00 	lds	r26, 0x0082	; 0x800082 <WIEGAND::_cardTemp+0x2>
+ a24:	b0 91 83 00 	lds	r27, 0x0083	; 0x800083 <WIEGAND::_cardTemp+0x3>
+ a28:	b6 95       	lsr	r27
+ a2a:	a7 95       	ror	r26
+ a2c:	97 95       	ror	r25
+ a2e:	87 95       	ror	r24
+ a30:	80 93 80 00 	sts	0x0080, r24	; 0x800080 <WIEGAND::_cardTemp>
+ a34:	90 93 81 00 	sts	0x0081, r25	; 0x800081 <WIEGAND::_cardTemp+0x1>
+ a38:	a0 93 82 00 	sts	0x0082, r26	; 0x800082 <WIEGAND::_cardTemp+0x2>
+ a3c:	b0 93 83 00 	sts	0x0083, r27	; 0x800083 <WIEGAND::_cardTemp+0x3>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:141
+			if (_bitCount>32)			// bit count more than 32 bits, shift high bits right to make adjustment
+ a40:	80 91 84 00 	lds	r24, 0x0084	; 0x800084 <WIEGAND::_bitCount>
+ a44:	90 91 85 00 	lds	r25, 0x0085	; 0x800085 <WIEGAND::_bitCount+0x1>
+ a48:	81 97       	sbiw	r24, 0x21	; 33
+ a4a:	a4 f0       	brlt	.+40     	; 0xa74 <main+0x23e>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:142
+				_cardTempHigh >>= 1;
+ a4c:	80 91 7c 00 	lds	r24, 0x007C	; 0x80007c <__data_end>
+ a50:	90 91 7d 00 	lds	r25, 0x007D	; 0x80007d <__data_end+0x1>
+ a54:	a0 91 7e 00 	lds	r26, 0x007E	; 0x80007e <__data_end+0x2>
+ a58:	b0 91 7f 00 	lds	r27, 0x007F	; 0x80007f <__data_end+0x3>
+ a5c:	b6 95       	lsr	r27
+ a5e:	a7 95       	ror	r26
+ a60:	97 95       	ror	r25
+ a62:	87 95       	ror	r24
+ a64:	80 93 7c 00 	sts	0x007C, r24	; 0x80007c <__data_end>
+ a68:	90 93 7d 00 	sts	0x007D, r25	; 0x80007d <__data_end+0x1>
+ a6c:	a0 93 7e 00 	sts	0x007E, r26	; 0x80007e <__data_end+0x2>
+ a70:	b0 93 7f 00 	sts	0x007F, r27	; 0x80007f <__data_end+0x3>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:144
+
+			if (_bitCount==8)		// keypress wiegand with integrity
+ a74:	80 91 84 00 	lds	r24, 0x0084	; 0x800084 <WIEGAND::_bitCount>
+ a78:	90 91 85 00 	lds	r25, 0x0085	; 0x800085 <WIEGAND::_bitCount+0x1>
+ a7c:	08 97       	sbiw	r24, 0x08	; 8
+ a7e:	09 f0       	breq	.+2      	; 0xa82 <main+0x24c>
+ a80:	4a c0       	rjmp	.+148    	; 0xb16 <main+0x2e0>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:148
+			{
+				// 8-bit Wiegand keyboard data, high nibble is the "NOT" of low nibble
+				// eg if key 1 pressed, data=E1 in binary 11100001 , high nibble=1110 , low nibble = 0001 
+				char highNibble = (_cardTemp & 0xf0) >>4;
+ a82:	40 91 80 00 	lds	r20, 0x0080	; 0x800080 <WIEGAND::_cardTemp>
+ a86:	50 91 81 00 	lds	r21, 0x0081	; 0x800081 <WIEGAND::_cardTemp+0x1>
+ a8a:	60 91 82 00 	lds	r22, 0x0082	; 0x800082 <WIEGAND::_cardTemp+0x2>
+ a8e:	70 91 83 00 	lds	r23, 0x0083	; 0x800083 <WIEGAND::_cardTemp+0x3>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:149
+				char lowNibble = (_cardTemp & 0x0f);
+ a92:	80 91 80 00 	lds	r24, 0x0080	; 0x800080 <WIEGAND::_cardTemp>
+ a96:	90 91 81 00 	lds	r25, 0x0081	; 0x800081 <WIEGAND::_cardTemp+0x1>
+ a9a:	a0 91 82 00 	lds	r26, 0x0082	; 0x800082 <WIEGAND::_cardTemp+0x2>
+ a9e:	b0 91 83 00 	lds	r27, 0x0083	; 0x800083 <WIEGAND::_cardTemp+0x3>
+ aa2:	8f 70       	andi	r24, 0x0F	; 15
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:150
+				_wiegandType=_bitCount;					
+ aa4:	e0 91 84 00 	lds	r30, 0x0084	; 0x800084 <WIEGAND::_bitCount>
+ aa8:	f0 91 85 00 	lds	r31, 0x0085	; 0x800085 <WIEGAND::_bitCount+0x1>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:151
+				_bitCount=0;
+ aac:	10 92 85 00 	sts	0x0085, r1	; 0x800085 <WIEGAND::_bitCount+0x1>
+ ab0:	10 92 84 00 	sts	0x0084, r1	; 0x800084 <WIEGAND::_bitCount>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:152
+				_cardTemp=0;
+ ab4:	10 92 80 00 	sts	0x0080, r1	; 0x800080 <WIEGAND::_cardTemp>
+ ab8:	10 92 81 00 	sts	0x0081, r1	; 0x800081 <WIEGAND::_cardTemp+0x1>
+ abc:	10 92 82 00 	sts	0x0082, r1	; 0x800082 <WIEGAND::_cardTemp+0x2>
+ ac0:	10 92 83 00 	sts	0x0083, r1	; 0x800083 <WIEGAND::_cardTemp+0x3>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:153
+				_cardTempHigh=0;
+ ac4:	10 92 7c 00 	sts	0x007C, r1	; 0x80007c <__data_end>
+ ac8:	10 92 7d 00 	sts	0x007D, r1	; 0x80007d <__data_end+0x1>
+ acc:	10 92 7e 00 	sts	0x007E, r1	; 0x80007e <__data_end+0x2>
+ ad0:	10 92 7f 00 	sts	0x007F, r1	; 0x80007f <__data_end+0x3>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:148
+
+			if (_bitCount==8)		// keypress wiegand with integrity
+			{
+				// 8-bit Wiegand keyboard data, high nibble is the "NOT" of low nibble
+				// eg if key 1 pressed, data=E1 in binary 11100001 , high nibble=1110 , low nibble = 0001 
+				char highNibble = (_cardTemp & 0xf0) >>4;
+ ad4:	e4 e0       	ldi	r30, 0x04	; 4
+ ad6:	76 95       	lsr	r23
+ ad8:	67 95       	ror	r22
+ ada:	57 95       	ror	r21
+ adc:	47 95       	ror	r20
+ ade:	ea 95       	dec	r30
+ ae0:	d1 f7       	brne	.-12     	; 0xad6 <main+0x2a0>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:155
+				_wiegandType=_bitCount;					
+				_bitCount=0;
+				_cardTemp=0;
+				_cardTempHigh=0;
+				
+				if (lowNibble == (~highNibble & 0x0f))		// check if low nibble matches the "NOT" of high nibble.
+ ae2:	40 95       	com	r20
+ ae4:	4f 70       	andi	r20, 0x0F	; 15
+ ae6:	84 13       	cpse	r24, r20
+ ae8:	7a cf       	rjmp	.-268    	; 0x9de <main+0x1a8>
+translateEnterEscapeKeyPress():
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:119
+
+	return *codelow;								// EM tag or Mifare without parity bits
+}
+
+char translateEnterEscapeKeyPress(char originalKeyPress) {
+	switch(originalKeyPress) {
+ aea:	8a 30       	cpi	r24, 0x0A	; 10
+ aec:	81 f0       	breq	.+32     	; 0xb0e <main+0x2d8>
+ aee:	8b 30       	cpi	r24, 0x0B	; 11
+ af0:	81 f0       	breq	.+32     	; 0xb12 <main+0x2dc>
+DoWiegandConversion():
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:157
+				_cardTemp=0;
+				_cardTempHigh=0;
+				
+				if (lowNibble == (~highNibble & 0x0f))		// check if low nibble matches the "NOT" of high nibble.
+				{
+					_code = (int)translateEnterEscapeKeyPress(lowNibble);
+ af2:	08 2e       	mov	r0, r24
+ af4:	00 0c       	add	r0, r0
+ af6:	99 0b       	sbc	r25, r25
+ af8:	aa 0b       	sbc	r26, r26
+ afa:	bb 0b       	sbc	r27, r27
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:189
+				cardID = GetCardId (&_cardTempHigh, &_cardTemp, _bitCount);
+				_wiegandType=_bitCount;
+				_bitCount=0;
+				_cardTemp=0;
+				_cardTempHigh=0;
+				_code=cardID;
+ afc:	80 93 8a 00 	sts	0x008A, r24	; 0x80008a <WIEGAND::_code>
+ b00:	90 93 8b 00 	sts	0x008B, r25	; 0x80008b <WIEGAND::_code+0x1>
+ b04:	a0 93 8c 00 	sts	0x008C, r26	; 0x80008c <WIEGAND::_code+0x2>
+ b08:	b0 93 8d 00 	sts	0x008D, r27	; 0x80008d <WIEGAND::_code+0x3>
+ b0c:	3f c0       	rjmp	.+126    	; 0xb8c <main+0x356>
+main():
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:124
+	switch(originalKeyPress) {
+	case 0x0b:        // 11 or * key
+		return 0x0d;  // 13 or ASCII ENTER
+
+	case 0x0a:        // 10 or # key
+		return 0x1b;  // 27 or ASCII ESCAPE
+ b0e:	8b e1       	ldi	r24, 0x1B	; 27
+ b10:	f0 cf       	rjmp	.-32     	; 0xaf2 <main+0x2bc>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:121
+}
+
+char translateEnterEscapeKeyPress(char originalKeyPress) {
+	switch(originalKeyPress) {
+	case 0x0b:        // 11 or * key
+		return 0x0d;  // 13 or ASCII ENTER
+ b12:	8d e0       	ldi	r24, 0x0D	; 13
+ b14:	ee cf       	rjmp	.-36     	; 0xaf2 <main+0x2bc>
+DoWiegandConversion():
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:170
+					return false;
+				}
+
+				// TODO: Handle validation failure case!
+			}
+			else if (4 == _bitCount) {
+ b16:	80 91 84 00 	lds	r24, 0x0084	; 0x800084 <WIEGAND::_bitCount>
+ b1a:	90 91 85 00 	lds	r25, 0x0085	; 0x800085 <WIEGAND::_bitCount+0x1>
+ b1e:	04 97       	sbiw	r24, 0x04	; 4
+ b20:	09 f0       	breq	.+2      	; 0xb24 <main+0x2ee>
+ b22:	5f c0       	rjmp	.+190    	; 0xbe2 <main+0x3ac>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:173
+				// 4-bit Wiegand codes have no data integrity check so we just
+				// read the LOW nibble.
+				_code = (int)translateEnterEscapeKeyPress(_cardTemp & 0x0000000F);
+ b24:	80 91 80 00 	lds	r24, 0x0080	; 0x800080 <WIEGAND::_cardTemp>
+ b28:	90 91 81 00 	lds	r25, 0x0081	; 0x800081 <WIEGAND::_cardTemp+0x1>
+ b2c:	a0 91 82 00 	lds	r26, 0x0082	; 0x800082 <WIEGAND::_cardTemp+0x2>
+ b30:	b0 91 83 00 	lds	r27, 0x0083	; 0x800083 <WIEGAND::_cardTemp+0x3>
+ b34:	8f 70       	andi	r24, 0x0F	; 15
+translateEnterEscapeKeyPress():
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:119
+
+	return *codelow;								// EM tag or Mifare without parity bits
+}
+
+char translateEnterEscapeKeyPress(char originalKeyPress) {
+	switch(originalKeyPress) {
+ b36:	8a 30       	cpi	r24, 0x0A	; 10
+ b38:	09 f4       	brne	.+2      	; 0xb3c <main+0x306>
+ b3a:	4f c0       	rjmp	.+158    	; 0xbda <main+0x3a4>
+ b3c:	8b 30       	cpi	r24, 0x0B	; 11
+ b3e:	09 f4       	brne	.+2      	; 0xb42 <main+0x30c>
+ b40:	4e c0       	rjmp	.+156    	; 0xbde <main+0x3a8>
+DoWiegandConversion():
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:173
+				// TODO: Handle validation failure case!
+			}
+			else if (4 == _bitCount) {
+				// 4-bit Wiegand codes have no data integrity check so we just
+				// read the LOW nibble.
+				_code = (int)translateEnterEscapeKeyPress(_cardTemp & 0x0000000F);
+ b42:	08 2e       	mov	r0, r24
+ b44:	00 0c       	add	r0, r0
+ b46:	99 0b       	sbc	r25, r25
+ b48:	aa 0b       	sbc	r26, r26
+ b4a:	bb 0b       	sbc	r27, r27
+ b4c:	80 93 8a 00 	sts	0x008A, r24	; 0x80008a <WIEGAND::_code>
+ b50:	90 93 8b 00 	sts	0x008B, r25	; 0x80008b <WIEGAND::_code+0x1>
+ b54:	a0 93 8c 00 	sts	0x008C, r26	; 0x80008c <WIEGAND::_code+0x2>
+ b58:	b0 93 8d 00 	sts	0x008D, r27	; 0x80008d <WIEGAND::_code+0x3>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:175
+
+				_wiegandType = _bitCount;
+ b5c:	80 91 84 00 	lds	r24, 0x0084	; 0x800084 <WIEGAND::_bitCount>
+ b60:	90 91 85 00 	lds	r25, 0x0085	; 0x800085 <WIEGAND::_bitCount+0x1>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:176
+				_bitCount = 0;
+ b64:	10 92 85 00 	sts	0x0085, r1	; 0x800085 <WIEGAND::_bitCount+0x1>
+ b68:	10 92 84 00 	sts	0x0084, r1	; 0x800084 <WIEGAND::_bitCount>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:177
+				_cardTemp = 0;
+ b6c:	10 92 80 00 	sts	0x0080, r1	; 0x800080 <WIEGAND::_cardTemp>
+ b70:	10 92 81 00 	sts	0x0081, r1	; 0x800081 <WIEGAND::_cardTemp+0x1>
+ b74:	10 92 82 00 	sts	0x0082, r1	; 0x800082 <WIEGAND::_cardTemp+0x2>
+ b78:	10 92 83 00 	sts	0x0083, r1	; 0x800083 <WIEGAND::_cardTemp+0x3>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:178
+				_cardTempHigh = 0;
+ b7c:	10 92 7c 00 	sts	0x007C, r1	; 0x80007c <__data_end>
+ b80:	10 92 7d 00 	sts	0x007D, r1	; 0x80007d <__data_end+0x1>
+ b84:	10 92 7e 00 	sts	0x007E, r1	; 0x80007e <__data_end+0x2>
+ b88:	10 92 7f 00 	sts	0x007F, r1	; 0x80007f <__data_end+0x3>
+available():
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:37
+bool WIEGAND::available()
+{
+	bool ret;
+	noInterrupts();
+	ret=DoWiegandConversion();
+	interrupts();
+ b8c:	78 94       	sei
+loop():
+C:\Users\kedai\Desktop\RFID_Reader_DERE/RFID_Reader_DERE.ino:16
+
+void loop() {
+  if(wg.available())
+  {
+
+    if (Serial.available())
+ b8e:	8f eb       	ldi	r24, 0xBF	; 191
+ b90:	90 e0       	ldi	r25, 0x00	; 0
+ b92:	ff db       	rcall	.-2050   	; 0x392 <HardwareSerial::available()>
+ b94:	89 2b       	or	r24, r25
+ b96:	31 f0       	breq	.+12     	; 0xba4 <main+0x36e>
+C:\Users\kedai\Desktop\RFID_Reader_DERE/RFID_Reader_DERE.ino:18
+      {
+        mode_terima();
+ b98:	84 dc       	rcall	.-1784   	; 0x4a2 <mode_terima()>
+C:\Users\kedai\Desktop\RFID_Reader_DERE/RFID_Reader_DERE.ino:19
+        delay(100);
+ b9a:	64 e6       	ldi	r22, 0x64	; 100
+ b9c:	70 e0       	ldi	r23, 0x00	; 0
+ b9e:	80 e0       	ldi	r24, 0x00	; 0
+ ba0:	90 e0       	ldi	r25, 0x00	; 0
+ ba2:	ca da       	rcall	.-2668   	; 0x138 <delay>
+C:\Users\kedai\Desktop\RFID_Reader_DERE/RFID_Reader_DERE.ino:27
+        Serial.println(wg.getCode(),HEX);
+        delay(50);
+        mode_terima();
+      }else
+      {
+        mode_kirim();
+ ba4:	85 dc       	rcall	.-1782   	; 0x4b0 <mode_kirim()>
+C:\Users\kedai\Desktop\RFID_Reader_DERE/RFID_Reader_DERE.ino:28
+        Serial.print("OUT:TRFID:");
+ ba6:	11 dd       	rcall	.-1502   	; 0x5ca <Print::print(char const*) [clone .constprop.13]>
+print():
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/Print.cpp:95
+}
+
+size_t Print::print(unsigned long n, int base)
+{
+  if (base == 0) return write(n);
+  else return printNumber(n, base);
+ ba8:	60 91 8a 00 	lds	r22, 0x008A	; 0x80008a <WIEGAND::_code>
+ bac:	70 91 8b 00 	lds	r23, 0x008B	; 0x80008b <WIEGAND::_code+0x1>
+ bb0:	80 91 8c 00 	lds	r24, 0x008C	; 0x80008c <WIEGAND::_code+0x2>
+ bb4:	90 91 8d 00 	lds	r25, 0x008D	; 0x80008d <WIEGAND::_code+0x3>
+ bb8:	40 e1       	ldi	r20, 0x10	; 16
+ bba:	b4 dc       	rcall	.-1688   	; 0x524 <Print::printNumber(unsigned long, unsigned char) [clone .constprop.9]>
+C:\Users\kedai\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.5.2\cores\tiny/Print.cpp:58
+  return write(str);
+}
+
+size_t Print::print(char c)
+{
+  return write(c);
+ bbc:	6d e0       	ldi	r22, 0x0D	; 13
+ bbe:	8f eb       	ldi	r24, 0xBF	; 191
+ bc0:	90 e0       	ldi	r25, 0x00	; 0
+ bc2:	8a db       	rcall	.-2284   	; 0x2d8 <HardwareSerial::write(unsigned char)>
+ bc4:	6a e0       	ldi	r22, 0x0A	; 10
+ bc6:	8f eb       	ldi	r24, 0xBF	; 191
+ bc8:	90 e0       	ldi	r25, 0x00	; 0
+ bca:	86 db       	rcall	.-2292   	; 0x2d8 <HardwareSerial::write(unsigned char)>
+loop():
+C:\Users\kedai\Desktop\RFID_Reader_DERE/RFID_Reader_DERE.ino:30
+        Serial.println(wg.getCode(),HEX);
+        delay(50);
+ bcc:	62 e3       	ldi	r22, 0x32	; 50
+ bce:	70 e0       	ldi	r23, 0x00	; 0
+ bd0:	80 e0       	ldi	r24, 0x00	; 0
+ bd2:	90 e0       	ldi	r25, 0x00	; 0
+ bd4:	b1 da       	rcall	.-2718   	; 0x138 <delay>
+C:\Users\kedai\Desktop\RFID_Reader_DERE/RFID_Reader_DERE.ino:31
+        mode_terima();
+ bd6:	65 dc       	rcall	.-1846   	; 0x4a2 <mode_terima()>
+ bd8:	bc ce       	rjmp	.-648    	; 0x952 <main+0x11c>
+main():
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:124
+	switch(originalKeyPress) {
+	case 0x0b:        // 11 or * key
+		return 0x0d;  // 13 or ASCII ENTER
+
+	case 0x0a:        // 10 or # key
+		return 0x1b;  // 27 or ASCII ESCAPE
+ bda:	8b e1       	ldi	r24, 0x1B	; 27
+ bdc:	b2 cf       	rjmp	.-156    	; 0xb42 <main+0x30c>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:121
+}
+
+char translateEnterEscapeKeyPress(char originalKeyPress) {
+	switch(originalKeyPress) {
+	case 0x0b:        // 11 or * key
+		return 0x0d;  // 13 or ASCII ENTER
+ bde:	8d e0       	ldi	r24, 0x0D	; 13
+ be0:	b0 cf       	rjmp	.-160    	; 0xb42 <main+0x30c>
+DoWiegandConversion():
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:184
+
+				return true;
+			}
+			else		// wiegand 26 or wiegand 34
+			{
+				cardID = GetCardId (&_cardTempHigh, &_cardTemp, _bitCount);
+ be2:	80 91 84 00 	lds	r24, 0x0084	; 0x800084 <WIEGAND::_bitCount>
+ be6:	90 91 85 00 	lds	r25, 0x0085	; 0x800085 <WIEGAND::_bitCount+0x1>
+GetCardId():
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:97
+	_lastWiegand = millis();	// Keep track of last wiegand bit received
+}
+
+unsigned long WIEGAND::GetCardId (volatile unsigned long *codehigh, volatile unsigned long *codelow, char bitlength)
+{
+	if (bitlength==26)								// EM tag
+ bea:	8a 31       	cpi	r24, 0x1A	; 26
+ bec:	31 f5       	brne	.+76     	; 0xc3a <main+0x404>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:98
+		return (*codelow & 0x1FFFFFE) >>1;
+ bee:	80 91 80 00 	lds	r24, 0x0080	; 0x800080 <WIEGAND::_cardTemp>
+ bf2:	90 91 81 00 	lds	r25, 0x0081	; 0x800081 <WIEGAND::_cardTemp+0x1>
+ bf6:	a0 91 82 00 	lds	r26, 0x0082	; 0x800082 <WIEGAND::_cardTemp+0x2>
+ bfa:	b0 91 83 00 	lds	r27, 0x0083	; 0x800083 <WIEGAND::_cardTemp+0x3>
+ bfe:	b6 95       	lsr	r27
+ c00:	a7 95       	ror	r26
+ c02:	97 95       	ror	r25
+ c04:	87 95       	ror	r24
+ c06:	bb 27       	eor	r27, r27
+DoWiegandConversion():
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:185
+				return true;
+			}
+			else		// wiegand 26 or wiegand 34
+			{
+				cardID = GetCardId (&_cardTempHigh, &_cardTemp, _bitCount);
+				_wiegandType=_bitCount;
+ c08:	20 91 84 00 	lds	r18, 0x0084	; 0x800084 <WIEGAND::_bitCount>
+ c0c:	30 91 85 00 	lds	r19, 0x0085	; 0x800085 <WIEGAND::_bitCount+0x1>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:186
+				_bitCount=0;
+ c10:	10 92 85 00 	sts	0x0085, r1	; 0x800085 <WIEGAND::_bitCount+0x1>
+ c14:	10 92 84 00 	sts	0x0084, r1	; 0x800084 <WIEGAND::_bitCount>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:187
+				_cardTemp=0;
+ c18:	10 92 80 00 	sts	0x0080, r1	; 0x800080 <WIEGAND::_cardTemp>
+ c1c:	10 92 81 00 	sts	0x0081, r1	; 0x800081 <WIEGAND::_cardTemp+0x1>
+ c20:	10 92 82 00 	sts	0x0082, r1	; 0x800082 <WIEGAND::_cardTemp+0x2>
+ c24:	10 92 83 00 	sts	0x0083, r1	; 0x800083 <WIEGAND::_cardTemp+0x3>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:188
+				_cardTempHigh=0;
+ c28:	10 92 7c 00 	sts	0x007C, r1	; 0x80007c <__data_end>
+ c2c:	10 92 7d 00 	sts	0x007D, r1	; 0x80007d <__data_end+0x1>
+ c30:	10 92 7e 00 	sts	0x007E, r1	; 0x80007e <__data_end+0x2>
+ c34:	10 92 7f 00 	sts	0x007F, r1	; 0x80007f <__data_end+0x3>
+ c38:	61 cf       	rjmp	.-318    	; 0xafc <main+0x2c6>
+GetCardId():
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:100
+unsigned long WIEGAND::GetCardId (volatile unsigned long *codehigh, volatile unsigned long *codelow, char bitlength)
+{
+	if (bitlength==26)								// EM tag
+		return (*codelow & 0x1FFFFFE) >>1;
+
+	if (bitlength==24)
+ c3a:	88 31       	cpi	r24, 0x18	; 24
+ c3c:	79 f4       	brne	.+30     	; 0xc5c <main+0x426>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:101
+		return (*codelow & 0x7FFFFE) >>1;
+ c3e:	80 91 80 00 	lds	r24, 0x0080	; 0x800080 <WIEGAND::_cardTemp>
+ c42:	90 91 81 00 	lds	r25, 0x0081	; 0x800081 <WIEGAND::_cardTemp+0x1>
+ c46:	a0 91 82 00 	lds	r26, 0x0082	; 0x800082 <WIEGAND::_cardTemp+0x2>
+ c4a:	b0 91 83 00 	lds	r27, 0x0083	; 0x800083 <WIEGAND::_cardTemp+0x3>
+ c4e:	b6 95       	lsr	r27
+ c50:	a7 95       	ror	r26
+ c52:	97 95       	ror	r25
+ c54:	87 95       	ror	r24
+ c56:	af 73       	andi	r26, 0x3F	; 63
+ c58:	bb 27       	eor	r27, r27
+ c5a:	d6 cf       	rjmp	.-84     	; 0xc08 <main+0x3d2>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:103
+
+	if (bitlength==34)								// Mifare 
+ c5c:	82 32       	cpi	r24, 0x22	; 34
+ c5e:	09 f0       	breq	.+2      	; 0xc62 <main+0x42c>
+ c60:	54 c0       	rjmp	.+168    	; 0xd0a <main+0x4d4>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:105
+	{
+		*codehigh = *codehigh & 0x03;				// only need the 2 LSB of the codehigh
+ c62:	80 91 7c 00 	lds	r24, 0x007C	; 0x80007c <__data_end>
+ c66:	90 91 7d 00 	lds	r25, 0x007D	; 0x80007d <__data_end+0x1>
+ c6a:	a0 91 7e 00 	lds	r26, 0x007E	; 0x80007e <__data_end+0x2>
+ c6e:	b0 91 7f 00 	lds	r27, 0x007F	; 0x80007f <__data_end+0x3>
+ c72:	83 70       	andi	r24, 0x03	; 3
+ c74:	99 27       	eor	r25, r25
+ c76:	aa 27       	eor	r26, r26
+ c78:	bb 27       	eor	r27, r27
+ c7a:	80 93 7c 00 	sts	0x007C, r24	; 0x80007c <__data_end>
+ c7e:	90 93 7d 00 	sts	0x007D, r25	; 0x80007d <__data_end+0x1>
+ c82:	a0 93 7e 00 	sts	0x007E, r26	; 0x80007e <__data_end+0x2>
+ c86:	b0 93 7f 00 	sts	0x007F, r27	; 0x80007f <__data_end+0x3>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:106
+		*codehigh <<= 30;							// shift 2 LSB to MSB		
+ c8a:	80 91 7c 00 	lds	r24, 0x007C	; 0x80007c <__data_end>
+ c8e:	90 91 7d 00 	lds	r25, 0x007D	; 0x80007d <__data_end+0x1>
+ c92:	a0 91 7e 00 	lds	r26, 0x007E	; 0x80007e <__data_end+0x2>
+ c96:	b0 91 7f 00 	lds	r27, 0x007F	; 0x80007f <__data_end+0x3>
+ c9a:	3e e1       	ldi	r19, 0x1E	; 30
+ c9c:	88 0f       	add	r24, r24
+ c9e:	99 1f       	adc	r25, r25
+ ca0:	aa 1f       	adc	r26, r26
+ ca2:	bb 1f       	adc	r27, r27
+ ca4:	3a 95       	dec	r19
+ ca6:	d1 f7       	brne	.-12     	; 0xc9c <main+0x466>
+ ca8:	80 93 7c 00 	sts	0x007C, r24	; 0x80007c <__data_end>
+ cac:	90 93 7d 00 	sts	0x007D, r25	; 0x80007d <__data_end+0x1>
+ cb0:	a0 93 7e 00 	sts	0x007E, r26	; 0x80007e <__data_end+0x2>
+ cb4:	b0 93 7f 00 	sts	0x007F, r27	; 0x80007f <__data_end+0x3>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:107
+		*codelow >>=1;
+ cb8:	80 91 80 00 	lds	r24, 0x0080	; 0x800080 <WIEGAND::_cardTemp>
+ cbc:	90 91 81 00 	lds	r25, 0x0081	; 0x800081 <WIEGAND::_cardTemp+0x1>
+ cc0:	a0 91 82 00 	lds	r26, 0x0082	; 0x800082 <WIEGAND::_cardTemp+0x2>
+ cc4:	b0 91 83 00 	lds	r27, 0x0083	; 0x800083 <WIEGAND::_cardTemp+0x3>
+ cc8:	b6 95       	lsr	r27
+ cca:	a7 95       	ror	r26
+ ccc:	97 95       	ror	r25
+ cce:	87 95       	ror	r24
+ cd0:	80 93 80 00 	sts	0x0080, r24	; 0x800080 <WIEGAND::_cardTemp>
+ cd4:	90 93 81 00 	sts	0x0081, r25	; 0x800081 <WIEGAND::_cardTemp+0x1>
+ cd8:	a0 93 82 00 	sts	0x0082, r26	; 0x800082 <WIEGAND::_cardTemp+0x2>
+ cdc:	b0 93 83 00 	sts	0x0083, r27	; 0x800083 <WIEGAND::_cardTemp+0x3>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:108
+		return *codehigh | *codelow;
+ ce0:	80 91 7c 00 	lds	r24, 0x007C	; 0x80007c <__data_end>
+ ce4:	90 91 7d 00 	lds	r25, 0x007D	; 0x80007d <__data_end+0x1>
+ ce8:	a0 91 7e 00 	lds	r26, 0x007E	; 0x80007e <__data_end+0x2>
+ cec:	b0 91 7f 00 	lds	r27, 0x007F	; 0x80007f <__data_end+0x3>
+ cf0:	40 91 80 00 	lds	r20, 0x0080	; 0x800080 <WIEGAND::_cardTemp>
+ cf4:	50 91 81 00 	lds	r21, 0x0081	; 0x800081 <WIEGAND::_cardTemp+0x1>
+ cf8:	60 91 82 00 	lds	r22, 0x0082	; 0x800082 <WIEGAND::_cardTemp+0x2>
+ cfc:	70 91 83 00 	lds	r23, 0x0083	; 0x800083 <WIEGAND::_cardTemp+0x3>
+ d00:	84 2b       	or	r24, r20
+ d02:	95 2b       	or	r25, r21
+ d04:	a6 2b       	or	r26, r22
+ d06:	b7 2b       	or	r27, r23
+ d08:	7f cf       	rjmp	.-258    	; 0xc08 <main+0x3d2>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:111
+	}
+
+	if (bitlength==32) {
+ d0a:	80 32       	cpi	r24, 0x20	; 32
+ d0c:	71 f4       	brne	.+28     	; 0xd2a <main+0x4f4>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:112
+		return (*codelow & 0x7FFFFFFE ) >>1;
+ d0e:	80 91 80 00 	lds	r24, 0x0080	; 0x800080 <WIEGAND::_cardTemp>
+ d12:	90 91 81 00 	lds	r25, 0x0081	; 0x800081 <WIEGAND::_cardTemp+0x1>
+ d16:	a0 91 82 00 	lds	r26, 0x0082	; 0x800082 <WIEGAND::_cardTemp+0x2>
+ d1a:	b0 91 83 00 	lds	r27, 0x0083	; 0x800083 <WIEGAND::_cardTemp+0x3>
+ d1e:	b6 95       	lsr	r27
+ d20:	a7 95       	ror	r26
+ d22:	97 95       	ror	r25
+ d24:	87 95       	ror	r24
+ d26:	bf 73       	andi	r27, 0x3F	; 63
+ d28:	6f cf       	rjmp	.-290    	; 0xc08 <main+0x3d2>
+c:\Users\kedai\Documents\Arduino\libraries\Wiegand_Protocol_Library_for_Arduino\src/Wiegand.cpp:115
+	}
+
+	return *codelow;								// EM tag or Mifare without parity bits
+ d2a:	80 91 80 00 	lds	r24, 0x0080	; 0x800080 <WIEGAND::_cardTemp>
+ d2e:	90 91 81 00 	lds	r25, 0x0081	; 0x800081 <WIEGAND::_cardTemp+0x1>
+ d32:	a0 91 82 00 	lds	r26, 0x0082	; 0x800082 <WIEGAND::_cardTemp+0x2>
+ d36:	b0 91 83 00 	lds	r27, 0x0083	; 0x800083 <WIEGAND::_cardTemp+0x3>
+ d3a:	66 cf       	rjmp	.-308    	; 0xc08 <main+0x3d2>
+
+00000d3c <__mulqi3>:
+__mulqi3():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:224
+ d3c:	00 24       	eor	r0, r0
+
+00000d3e <__mulqi3_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:226
+ d3e:	80 fd       	sbrc	r24, 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:227
+ d40:	06 0e       	add	r0, r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:228
+ d42:	66 0f       	add	r22, r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:229
+ d44:	11 f0       	breq	.+4      	; 0xd4a <__mulqi3_exit>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:230
+ d46:	86 95       	lsr	r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:231
+ d48:	d1 f7       	brne	.-12     	; 0xd3e <__mulqi3_loop>
+
+00000d4a <__mulqi3_exit>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:233
+ d4a:	80 2d       	mov	r24, r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:234
+ d4c:	08 95       	ret
+
+00000d4e <__udivmodsi4>:
+__udivmodsi4():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1638
+ d4e:	a1 e2       	ldi	r26, 0x21	; 33
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1639
+ d50:	1a 2e       	mov	r1, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1640
+ d52:	aa 1b       	sub	r26, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1641
+ d54:	bb 1b       	sub	r27, r27
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1642
+ d56:	fd 01       	movw	r30, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1644
+ d58:	0d c0       	rjmp	.+26     	; 0xd74 <__udivmodsi4_ep>
+
+00000d5a <__udivmodsi4_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1646
+ d5a:	aa 1f       	adc	r26, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1647
+ d5c:	bb 1f       	adc	r27, r27
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1648
+ d5e:	ee 1f       	adc	r30, r30
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1649
+ d60:	ff 1f       	adc	r31, r31
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1650
+ d62:	a2 17       	cp	r26, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1651
+ d64:	b3 07       	cpc	r27, r19
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1652
+ d66:	e4 07       	cpc	r30, r20
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1653
+ d68:	f5 07       	cpc	r31, r21
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1654
+ d6a:	20 f0       	brcs	.+8      	; 0xd74 <__udivmodsi4_ep>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1655
+ d6c:	a2 1b       	sub	r26, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1656
+ d6e:	b3 0b       	sbc	r27, r19
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1657
+ d70:	e4 0b       	sbc	r30, r20
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1658
+ d72:	f5 0b       	sbc	r31, r21
+
+00000d74 <__udivmodsi4_ep>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1660
+ d74:	66 1f       	adc	r22, r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1661
+ d76:	77 1f       	adc	r23, r23
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1662
+ d78:	88 1f       	adc	r24, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1663
+ d7a:	99 1f       	adc	r25, r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1664
+ d7c:	1a 94       	dec	r1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1665
+ d7e:	69 f7       	brne	.-38     	; 0xd5a <__udivmodsi4_loop>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1667
+ d80:	60 95       	com	r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1668
+ d82:	70 95       	com	r23
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1669
+ d84:	80 95       	com	r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1670
+ d86:	90 95       	com	r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1672
+ d88:	9b 01       	movw	r18, r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1674
+ d8a:	ac 01       	movw	r20, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1676
+ d8c:	bd 01       	movw	r22, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1678
+ d8e:	cf 01       	movw	r24, r30
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1680
+ d90:	08 95       	ret
+
+00000d92 <__tablejump2__>:
+__tablejump2__():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2296
+ d92:	ee 0f       	add	r30, r30
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2297
+ d94:	ff 1f       	adc	r31, r31
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2328
+ d96:	05 90       	lpm	r0, Z+
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2329
+ d98:	f4 91       	lpm	r31, Z
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2330
+ d9a:	e0 2d       	mov	r30, r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2331
+ d9c:	09 94       	ijmp
+
+00000d9e <_exit>:
+exit():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2278
+ d9e:	f8 94       	cli
+
+00000da0 <__stop_program>:
+__stop_program():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2280
+ da0:	ff cf       	rjmp	.-2      	; 0xda0 <__stop_program>
